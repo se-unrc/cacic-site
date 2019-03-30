@@ -1,6 +1,5 @@
 (function ($) {
-	"use strict";
-	
+	"use strict";	
 	
 	// count down timer function
 	function countdownTimer () {
@@ -452,9 +451,12 @@
 
 	    };
 	}
+
 	// doc ready
-	$(document).on('ready', function () {
+	// $(document).on('ready', function () {
+	$( document ).on('turbolinks:load', function() {
 		console.log('TRIGGER DOC READY????');
+
 		countdownTimer();
 		GalleryFancyboxActivator();
 		upcomingEventFilter();
