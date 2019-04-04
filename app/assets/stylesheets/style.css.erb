@@ -195,7 +195,7 @@
 /* banner section styles */
 
 .banner {
-	background: #000 url(../img/banner-1.png) 0 0 no-repeat;
+	background: #000 url(<%= asset_path 'banner-1.png' %>) 0 0 no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	padding-top: 230px;
@@ -331,7 +331,7 @@ ul.coundown li span {
 }
 
 .counter-section {
-	background: #fc5a1b url(../img/parallax-1.png) center center no-repeat;
+	background: #fc5a1b url(<%= asset_path 'parallax-1.png' %>) center center no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	padding: 90px 0;
@@ -430,7 +430,7 @@ ul.coundown li span {
 
 
 .schedule-section {
-	background: #000 url(../img/parallax-2.png) center center no-repeat;
+	background: #000 url(<%= asset_path 'parallax-2.png' %>) center center no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -527,7 +527,7 @@ ul.coundown li span {
 
 .call-to-action {
 	position: relative;
-	background: #fc5a1b url(../img/parallax-3.png) center center no-repeat fixed;
+	background: #fc5a1b url(<%= asset_path 'parallax-3.png' %>) center center no-repeat fixed;
 	-webkit-background-size: cover;
 	background-size: cover;
 	padding: 100px 0;
@@ -640,7 +640,7 @@ ul.coundown li span {
 /* subscribe section styles */
 
 .subscribe-section {
-	background: #fff url(../img/parallax-4.png) center center no-repeat;
+	background: #fff url(<%= asset_path 'parallax-4.png' %>) center center no-repeat;
 	overflow: hidden;
 }
 .subscribe-section .half-overlay {
@@ -717,7 +717,7 @@ ul.coundown li span {
 .blog-section.blog-page .single-blog-post {margin-bottom: 30px;}
 .single-blog-post {}
 .single-blog-post .img-box {position: relative;}
-.single-blog-post .img-box .date-box {position: absolute;top: 20px;left: 20px;background: url(../img/blog-ribbon.png) no-repeat;width: 49px;height: 89px;color: #ffffff;font-size: 21px;font-family: 'Roboto';line-height: 20px;padding-top: 10px;text-align: center;}
+.single-blog-post .img-box .date-box {position: absolute;top: 20px;left: 20px;background: url(<%= asset_path 'blog-ribbon.png' %>) no-repeat;width: 49px;height: 89px;color: #ffffff;font-size: 21px;font-family: 'Roboto';line-height: 20px;padding-top: 10px;text-align: center;}
 .single-blog-post .img-box .date-box span {font-size: 14px;}
 .single-blog-post h3 {
 	margin: 0;
@@ -806,7 +806,7 @@ ul.coundown li span {
 /* footer styles */
 
 footer {
-	background:  url(../img/footer-bg.png) right center no-repeat;
+	background: url('<%= asset_url 'footer-bg.png' %>') right center no-repeat;
 	background-color: #242727;
 	color: #fff;
 	padding: 100px 0;
@@ -841,7 +841,7 @@ footer .contact-widget ul li {
 /* page title styles */
 
 .page-title {
-	background: #222222 url(../img/page-title-bg.jpg) 0 0 no-repeat;
+	background: #222222 url(<%= asset_path 'page-title-bg.jpg' %>) 0 0 no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	padding-top: 210px;
