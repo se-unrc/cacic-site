@@ -1,4 +1,4 @@
-  <section class="banner">
+<section class="banner">
   <div class="container">
     <div class="col-md-5 col-sm-12 col-xs-12 pull-left">
       <h2>Congreso Argentino de Ciencias de la Computación</h2>
@@ -30,12 +30,23 @@
     <div class="col-md-6">
       <br />
       <br />
-      <h4>Welcome to</h4>
+      <h4>Bienvenido a</h4>
       <h3>CACIC<span>2019</span></h3>
       <br />
-      <p class="black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam </p>
+      <p class="black">
+        El XXV Congreso Argentino de Ciencias de la Computación
+        se llevará a cabo por primera vez en la Provincia de Córdoba,
+        durante la segunda semana de Octubre, en la sede de la
+        Facultad de Ciencias Exactas, Físico-Químicas y Naturales de
+        la Universidad Nacional de Río Cuarto, Río Cuarto, Córdoba,
+        Argentina. El CACIC es el evento nacional de Cs. de la
+        Computación de mayor concurrencia y de alcance más
+        federal. Actúa como punto de encuentro de investigadores,
+        docentes, estudiantes de grado/postgrado, y profesionales de
+        la Informática.
+      </p>
       <br />
-      <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incidi dunt ut labore et dolore magna aliqu enim ad minim veniam.</p>
+      <p class="small"></p>
       <br />
       <a href="#" class="btn">Buy Ticket</a> &emsp; <a href="#" class="btn btn-inverse">Read More</a>
 
@@ -67,129 +78,95 @@
   </div><!-- /.container -->
 </section><!-- /.counter-section -->
 
-<%= render 'speakers' %>
-
-<%= render 'schedule'%>
-
-<section class="upcoming-event-section sec-pad">
+<section class="blog-section sec-pad">
   <div class="container">
     <div class="sec-title text-center">
-      <h5>Our Events</h5>
-      <h2>Upcoming Events</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incidi <br />dunt ut labore et dolore magna aliqu enim ad.</p>
+      <h5>2019</h5>
+      <h2>CACIC</h2>
+      <p> XXV Congreso Argentino de Ciencias de la Computación </p>
     </div><!-- /.sec-title text-center -->
-    <div class="event-carousel owl-theme owl-carousel">
-      <div class="item">
-        <div class="single-upcoming-event">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="single-blog-post text-center">
           <div class="img-box">
-            <%= image_tag('event-1.png') %>
-            <ul class="event-details">
-              <li><i class="fa fa-calendar"></i> 22 February, 2019</li>
-              <li><i class="fa fa-clock-o"></i> 9.00 AM</li>
-            </ul><!-- /.event-details -->
+            <%= image_tag('blog-1.png') %>
+            <div class="date-box">
+              25 <span>Feb</span>
+            </div><!-- /.date-box -->
           </div><!-- /.img-box -->
-          <h3>Fusce sagit odio ullam corper element.</h3>
-        </div><!-- /.single-upcoming-event -->
+          <div class="bottom-box">
+            <h3>El Congreso</h3>
+            <p>El Congreso Argentino de
+              Ciencias de la Computación
+              (CACIC) es organizado por la
+              Red de Universidades
+              Nacionales con carreras en
+              Informática (RedUNCI). CACIC
+              reúne desde 1995 a
+              investigadores, docentes,
+              profesionales y alumnos de
+              grado y postgrado vinculados
+              con la disciplina Informática. </p>
+            <ul class="post-meta list-inline text-center">
+              
+            </ul><!-- /.post-meta -->
+          </div><!-- .bottom-box -->
+        </div><!-- /.single-blog-post -->
       </div><!-- /.col-md-4 -->
-      <div class="item">
-        <div class="single-upcoming-event">
+      <div class="col-md-4">
+        <div class="single-blog-post text-center">
           <div class="img-box">
-            <%= image_tag('event-2.png') %>
-            <ul class="event-details">
-              <li><i class="fa fa-calendar"></i> 22 February, 2019</li>
-              <li><i class="fa fa-clock-o"></i> 9.00 AM</li>
-            </ul><!-- /.event-details -->
+            <%= image_tag('blog-2.png') %>
+            <div class="date-box">
+              25 <span>Feb</span>
+            </div><!-- /.date-box -->
           </div><!-- /.img-box -->
-          <h3>Proin tempor lectus mauris convalis.</h3>
-        </div><!-- /.single-upcoming-event -->
+          <div class="bottom-box">
+            <h3>La Escuela</h3>
+            <p>La Escuela Internacional de
+              Informática asociada a CACIC
+              brinda cursos intensivos de
+              formación destinados a
+              estudiantes de grado,
+              estudiantes de postgrado,
+              graduados e investigadores,
+              sobre diversas temáticas de
+              interés en Ciencias de la
+              Computación.</p>  
+            <ul class="post-meta list-inline text-center">
+            </ul><!-- /.post-meta -->
+          </div><!-- .bottom-box -->
+        </div><!-- /.single-blog-post -->
       </div><!-- /.col-md-4 -->
-      <div class="item">
-        <div class="single-upcoming-event">
+      <div class="col-md-4">
+        <div class="single-blog-post text-center">
           <div class="img-box">
-            <%= image_tag('event-3.png') %>
-            <ul class="event-details">
-              <li><i class="fa fa-calendar"></i> 22 February, 2019</li>
-              <li><i class="fa fa-clock-o"></i> 9.00 AM</li>
-            </ul><!-- /.event-details -->
+            <%= image_tag('blog-3.png') %>
+            <div class="date-box">
+              25 <span>Feb</span>
+            </div><!-- /.date-box -->
           </div><!-- /.img-box -->
-          <h3>Etiam non lectus est tellus mattis.</h3>
-        </div><!-- /.single-upcoming-event -->
-      </div><!-- /.col-md-4 -->
-      <div class="item">
-        <div class="single-upcoming-event">
-          <div class="img-box">
-            <%= image_tag('event-1.png') %>
-            <ul class="event-details">
-              <li><i class="fa fa-calendar"></i> 22 February, 2019</li>
-              <li><i class="fa fa-clock-o"></i> 9.00 AM</li>
-            </ul><!-- /.event-details -->
-          </div><!-- /.img-box -->
-          <h3>Fusce sagit odio ullam corper element.</h3>
-        </div><!-- /.single-upcoming-event -->
-      </div><!-- /.col-md-4 -->
-      <div class="item">
-        <div class="single-upcoming-event">
-          <div class="img-box">
-            <%= image_tag('event-2.png') %>
-            <ul class="event-details">
-              <li><i class="fa fa-calendar"></i> 22 February, 2019</li>
-              <li><i class="fa fa-clock-o"></i> 9.00 AM</li>
-            </ul><!-- /.event-details -->
-          </div><!-- /.img-box -->
-          <h3>Proin tempor lectus mauris convalis.</h3>
-        </div><!-- /.single-upcoming-event -->
-      </div><!-- /.col-md-4 -->
-      <div class="item">
-        <div class="single-upcoming-event">
-          <div class="img-box">
-            <%= image_tag('event-3.png') %>
-            <ul class="event-details">
-              <li><i class="fa fa-calendar"></i> 22 February, 2019</li>
-              <li><i class="fa fa-clock-o"></i> 9.00 AM</li>
-            </ul><!-- /.event-details -->
-          </div><!-- /.img-box -->
-          <h3>Etiam non lectus est tellus mattis.</h3>
-        </div><!-- /.single-upcoming-event -->
-      </div><!-- /.col-md-4 -->
-      <div class="item">
-        <div class="single-upcoming-event">
-          <div class="img-box">
-            <%= image_tag('event-1.png') %>
-            <ul class="event-details">
-              <li><i class="fa fa-calendar"></i> 22 February, 2019</li>
-              <li><i class="fa fa-clock-o"></i> 9.00 AM</li>
-            </ul><!-- /.event-details -->
-          </div><!-- /.img-box -->
-          <h3>Fusce sagit odio ullam corper element.</h3>
-        </div><!-- /.single-upcoming-event -->
-      </div><!-- /.col-md-4 -->
-      <div class="item">
-        <div class="single-upcoming-event">
-          <div class="img-box">
-            <%= image_tag('event-2.png') %>
-            <ul class="event-details">
-              <li><i class="fa fa-calendar"></i> 22 February, 2019</li>
-              <li><i class="fa fa-clock-o"></i> 9.00 AM</li>
-            </ul><!-- /.event-details -->
-          </div><!-- /.img-box -->
-          <h3>Proin tempor lectus mauris convalis.</h3>
-        </div><!-- /.single-upcoming-event -->
-      </div><!-- /.col-md-4 -->
-      <div class="item">
-        <div class="single-upcoming-event">
-          <div class="img-box">
-            <%= image_tag('event-3.png') %>
-            <ul class="event-details">
-              <li><i class="fa fa-calendar"></i> 22 February, 2019</li>
-              <li><i class="fa fa-clock-o"></i> 9.00 AM</li>
-            </ul><!-- /.event-details -->
-          </div><!-- /.img-box -->
-          <h3>Etiam non lectus est tellus mattis.</h3>
-        </div><!-- /.single-upcoming-event -->
+          <div class="bottom-box">
+            <h3>El Ateneo</h3>
+            <p>El Ateneo de Profesores
+            Universitarios de Computación
+            reúne a docentes y estudiantes
+            del nivel superior, involucrados
+            en la disciplina informática,
+            para discutir, analizar y
+            estudiar enfoques de
+            enseñanza-aprendizaje,
+            aspectos curriculares, y otros
+            temas de interés para la
+            enseñanza de la disciplina.</p>
+            <ul class="post-meta list-inline text-center">
+            </ul><!-- /.post-meta -->
+          </div><!-- /.bottom-box -->
+        </div><!-- /.single-blog-post -->
       </div><!-- /.col-md-4 -->
     </div><!-- /.row -->
   </div><!-- /.container -->
-</section><!-- /.upcoming-event-section -->
+</section><!-- /.blog-section -->
 
 <section class="call-to-action">
   <div class="container">
@@ -198,6 +175,10 @@
     <a href="#" class="btn">Register Now</a>
   </div><!-- /.container -->
 </section><!-- /.call-to-action -->
+
+<%= render 'speakers' %>
+
+<%= render 'schedule'%>
 
 <section class="choose-a-plan-section sec-pad">
   <div class="container">
@@ -394,107 +375,4 @@
 
   </div><!-- /.container -->
 </section><!-- /.event-sponsor sec-pad -->
-<section class="subscribe-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 pull-right half-overlay">
-        <div class="inner-content">
-          <h3>Subscribe to </h3>
-          <h2>Our Newsletter</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor <br /> incidi dunt ut labore et dolore magna aliqu enim ad.</p>
-          <form action="#">
-            <input type="text" placeholder="Enter your email" />
-            <button class="btn">Subscribe</button>
-          </form>
-        </div><!-- /.inner-content -->
-      </div><!-- /.col-md-6 pull-right -->
-    </div><!-- /.row -->
-  </div><!-- /.container -->
-</section><!-- /.subscribe-section -->
 
-<section class="blog-section sec-pad">
-  <div class="container">
-    <div class="sec-title text-center">
-      <h5>Our News</h5>
-      <h2>Latest Articles</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incidi <br />dunt ut labore et dolore magna aliqu enim ad.</p>
-    </div><!-- /.sec-title text-center -->
-    <div class="row">
-      <div class="col-md-4">
-        <div class="single-blog-post text-center">
-          <div class="img-box">
-            <%= image_tag('blog-1.png') %>
-            <div class="date-box">
-              25 <span>Feb</span>
-            </div><!-- /.date-box -->
-          </div><!-- /.img-box -->
-          <div class="bottom-box">
-            <h3>vitae tellus metus.</h3>
-            <p>Lorem ipsum dolor amet consectetur adipisicing elit sed eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim.</p>
-            <ul class="post-meta list-inline text-center">
-              <li>
-                <a href="#"><i class="fa fa-user-o"></i> Admin</a>                
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-heart-o"></i> 350</a>
-              </li>
-              <li>                
-                <a href="#"><i class="fa fa-comments-o"></i> 30</a>
-              </li>
-            </ul><!-- /.post-meta -->
-          </div><!-- .bottom-box -->
-        </div><!-- /.single-blog-post -->
-      </div><!-- /.col-md-4 -->
-      <div class="col-md-4">
-        <div class="single-blog-post text-center">
-          <div class="img-box">
-            <%= image_tag('blog-2.png') %>
-            <div class="date-box">
-              25 <span>Feb</span>
-            </div><!-- /.date-box -->
-          </div><!-- /.img-box -->
-          <div class="bottom-box">
-            <h3>porta quis lacus.</h3>
-            <p>Lorem ipsum dolor amet consectetur adipisicing elit sed eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim.</p>
-            <ul class="post-meta list-inline text-center">
-              <li>
-                <a href="#"><i class="fa fa-user-o"></i> Admin</a>                
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-heart-o"></i> 350</a>
-              </li>
-              <li>                
-                <a href="#"><i class="fa fa-comments-o"></i> 30</a>
-              </li>
-            </ul><!-- /.post-meta -->
-          </div><!-- .bottom-box -->
-        </div><!-- /.single-blog-post -->
-      </div><!-- /.col-md-4 -->
-      <div class="col-md-4">
-        <div class="single-blog-post text-center">
-          <div class="img-box">
-            <%= image_tag('blog-3.png') %>
-            <div class="date-box">
-              25 <span>Feb</span>
-            </div><!-- /.date-box -->
-          </div><!-- /.img-box -->
-          <div class="bottom-box">
-            <h3>velit eget ornare.</h3>
-            <p>Lorem ipsum dolor amet consectetur adipisicing elit sed eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim.</p>
-            <ul class="post-meta list-inline text-center">
-              <li>
-                <a href="#"><i class="fa fa-user-o"></i> Admin</a>                
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-heart-o"></i> 350</a>
-              </li>
-              <li>                
-                <a href="#"><i class="fa fa-comments-o"></i> 30</a>
-              </li>
-            </ul><!-- /.post-meta -->
-          </div><!-- /.bottom-box -->
-        </div><!-- /.single-blog-post -->
-      </div><!-- /.col-md-4 -->
-    </div><!-- /.row -->
-  </div><!-- /.container -->
-</section><!-- /.blog-section -->
