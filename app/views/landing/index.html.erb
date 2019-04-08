@@ -1,7 +1,8 @@
 <section class="banner">
   <div class="container">
+    <%= video_tag "output.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: "video" %>
     <div class="col-md-5 col-sm-12 col-xs-12 pull-left">
-      <h2>Congreso Argentino de Ciencias de la Computación</h2>
+      <h2 class="stopfade">Congreso Argentino de Ciencias de la Computación</h2>
       <p>February 22, 2019</p>
       <ul class="list-inline coundown">
         <!-- content loading via js -->
@@ -10,19 +11,22 @@
     <div class="col-md-4 col-sm-12 col-xs-12 pull-right">
       <form class="banner-form" action="#">
         <div class="form-header">
-          <h3>Register now</h3>
+          <h3>REGISTRARSE</h3>
         </div><!-- /.form-header -->
         <div class="form-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="text" placeholder="Email Address" />
-          <input type="text" placeholder="Phone Number" />
-          <input type="text" placeholder="Number Of Seats" />
-          <input type="text" placeholder="Choose A Plan" />
-          <button type="submit">Buy Ticket</button>
+          <input type="text" placeholder="Nombre" />
+          <input type="text" placeholder="Apellido" />
+          <input type="text" placeholder="Email" />
+          <input type="text" placeholder="Teléfono" />
+          <input type="text" placeholder="Plan" />
+          <button type="submit">Comprar</button>
         </div><!-- /.form-box -->
       </form>
     </div><!-- /.col-md-4 -->
   </div><!-- /.container -->
+</section><!-- /.banner -->
+
+<section class="banner">
 </section><!-- /.banner -->
 
 <section class="about-section sec-pad">

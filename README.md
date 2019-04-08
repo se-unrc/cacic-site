@@ -1,17 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+This is the web site to CACIC 2019
 
 * Ruby version
+2.6.2
 
 * System dependencies
+  bundle
 
 * Configuration
+  docker-compose up
 
 * Database creation
+  + Get into web container and create db
 
 * Database initialization
 
