@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   get 'landing/index'
   get 'static_pages/about'
+  get 'static_pages/speakers'
 
   root 'landing#index'
 end
