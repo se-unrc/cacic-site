@@ -43,11 +43,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
-@import url('bootstrap.min.css');
-@import url('font-awesome.min.css');
-@import url('owl.carousel.css');
-@import url('owl.theme.default.min.css');
-@import url('jquery.fancybox.css');
+@import url('<%= asset_path 'bootstrap.min.css' %>');
+@import url('<%= asset_path 'font-awesome.css' %>');
+@import url('<%= asset_path 'owl.carousel.css' %>');
+@import url('<%= asset_path 'owl.theme.default.min.css' %>');
+@import url('<%= asset_path 'jquery.fancybox.css' %>');
 
 /* miscelnious styles */
 
@@ -230,6 +230,7 @@ video {
 	margin: 5px;
 	background: black;
   opacity: .5;
+  padding-left: 5px;
 }
 .sepia {
   filter: grayscale(1) sepia(0.45);
@@ -239,19 +240,21 @@ video {
 .banner {
 	/*background: #000 url(<%= asset_path 'banner-1.png' %>) 0 0 no-repeat;*/
 	/* background: #000 url(<%= asset_path 'output.mp4' %>) 0 0 no-repeat; */
+  background: #000 url(<%= asset_path 'unrc-sepia-bg.png' %>) 0 0 no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	padding-top: 230px;
-	padding-bottom: 155px;
+	padding-bottom: 455px;
 }
 .banner h2 {
-	font-size: 34px;
+	font-size: 55px;
 	color: #ffffff;
 	line-height: 65px;
 	font-weight: 800;
 	font-family: 'Montserrat';
 	text-transform: uppercase;
 	margin-top: 60px;
+  margin-left: 0px;
 }
 .banner p {
 	font-size: 24px;
@@ -457,7 +460,7 @@ ul.coundown li span {
 .single-speaker .overlay-box .display-table {
 	display: table;width: 100%;height: 100%;
 }
-.single-speaker .overlay-box .display-table-cell {
+.single-speaker .overla.box .display-table-cell {
 	display: table-cell;vertical-align: middle;
 }
 .single-speaker .overlay-box .display-table-cell .social li a {width: 45px;height: 45px;border: 1px solid #ffffff;display: block;color: #fff;border-radius: 50%;line-height: 43px;font-size: 15px;transition: all .3s ease;}

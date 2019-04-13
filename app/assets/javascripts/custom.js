@@ -6,7 +6,7 @@
 		var countDownContainer = $('.coundown');
 		if (countDownContainer.length) {
 			countDownContainer.countdown({
-				date: "October 30, 2019 23:59:59"
+				date: "October 14, 2019 23:59:59"
 			});
 		};
 	}
