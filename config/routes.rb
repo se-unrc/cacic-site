@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   get 'landing/index'
   get 'static_pages/about'
+  get 'static_pages/contact'
   get 'static_pages/speakers'
   get 'static_pages/sponsors'
 
