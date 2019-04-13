@@ -4,4 +4,7 @@ class StaticPagesController < ApplicationController
 
   def speakers
   end
+
+  def sponsors
+  end
 end
