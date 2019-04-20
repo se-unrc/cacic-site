@@ -36,11 +36,12 @@
       <br />
       <p class="small"></p>
       <br />
-      <a href="#" class="btn">Buy Ticket</a> &emsp; <a href="#" class="btn btn-inverse">Read More</a>
+
+      <!-- <a href="#" class="btn">Buy Ticket</a> &emsp; <a href="#" class="btn btn-inverse">Read More</a> -->
 
     </div><!-- /.col-md-6 -->
-    <div class="col-md-6">
-      <%= image_tag('about-1.png') %>
+    <div class="col-md-6 sepia">
+      <%= image_tag('alumnos_caminando.jpg', size: '570x400') %>
     </div><!-- /.col-md-6 -->
   </div><!-- /.container -->
 </section><!-- /.about-section -->
@@ -49,19 +50,19 @@
   <div class="container">
     <div class="col-md-3 text-center">
       <%= fa_icon "microphone" %>
-      <p>8 Speakers</p>
+      <p> Charlas </p>
     </div><!-- /.col-md-3 -->
     <div class="col-md-3 text-center">
       <i class="fa fa-flag"></i>
-      <p>500 + Seats</p>
+      <p>Cursos</p>
     </div><!-- /.col-md-3 -->
     <div class="col-md-3 text-center">
       <i class="fa fa-ticket"></i>
-      <p>300 Tickets</p>
+      <p>Workshops</p>
     </div><!-- /.col-md-3 -->
     <div class="col-md-3 text-center">
       <i class="fa fa-calendar"></i>
-      <p>3 Days Event</p>
+      <p>Presentación de trabajos</p>
     </div><!-- /.col-md-3 -->
   </div><!-- /.container -->
 </section><!-- /.counter-section -->
@@ -77,9 +78,9 @@
       <div class="col-md-4">
         <div class="single-blog-post text-center">
           <div class="img-box">
-            <%= image_tag('blog-1.png') %>
+            <%= image_tag('abstract-image-1.jpeg', size: '370x240') %>
             <div class="date-box">
-              25 <span>Feb</span>
+              Oct <span>14-18</span>
             </div><!-- /.date-box -->
           </div><!-- /.img-box -->
           <div class="bottom-box">
@@ -104,9 +105,9 @@
       <div class="col-md-4">
         <div class="single-blog-post text-center">
           <div class="img-box">
-            <%= image_tag('blog-2.png') %>
+            <%= image_tag('abstract-image-2.jpeg', size: '370x240') %>
             <div class="date-box">
-              25 <span>Feb</span>
+              Oct <span>14-18 </span>
             </div><!-- /.date-box -->
           </div><!-- /.img-box -->
           <div class="bottom-box">
@@ -129,9 +130,9 @@
       <div class="col-md-4">
         <div class="single-blog-post text-center">
           <div class="img-box">
-            <%= image_tag('blog-3.png') %>
+            <%= image_tag('abstract-image-3.jpeg', size: '370x240') %>
             <div class="date-box">
-              25 <span>Feb</span>
+              Oct <span>14-18</span>
             </div><!-- /.date-box -->
           </div><!-- /.img-box -->
           <div class="bottom-box">
@@ -158,176 +159,20 @@
 
 <section class="call-to-action">
   <div class="container">
-    <h3>Register for Conference now</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incidi <br /> dunt ut labore et dolore magna aliqu enim ad.</p>
-    <a href="#" class="btn">Register Now</a>
+    <h3>Registraciones</h3>
+    <p>Próximamente se abrirán las registraciones</p>
+    <!-- <a href="#" class="btn">Register Now</a> -->
   </div><!-- /.container -->
 </section><!-- /.call-to-action -->
-
-<%= render 'speakers' %>
-
-<%= render 'schedule'%>
-
-<section class="choose-a-plan-section sec-pad">
-  <div class="container">
-    <div class="sec-title text-center">
-      <h5>Buy Ticket</h5>
-      <h2>Choose A Plan</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incidi <br />dunt ut labore et dolore magna aliqu enim ad.</p>
-    </div><!-- /.sec-title text-center -->
-    <div class="row">
-      <div class="col-md-4">
-        <div class="single-choose-a-plan-section">
-          <div class="top-box">
-            <div class="name">
-              <h3>Starter</h3>
-            </div><!-- /.name -->
-            <div class="price">
-              49.00<span>$</span>
-            </div><!-- /.price -->
-            <p>Per Person</p>
-          </div><!-- /.top-box -->
-          <ul>
-            <li><i class="fa fa-circle-thin"></i> 1 Comfortable Seats</li>
-            <li><i class="fa fa-circle-thin"></i> Free Lunch and Coffee</li>
-            <li><i class="fa fa-circle-thin"></i> Certificate</li>
-            <li><i class="fa fa-circle-thin"></i> Easy Access</li>
-          </ul>
-          <a href="#" class="btn">Buy a Ticket</a>
-        </div><!-- /.single-choose-a-plan-section -->
-      </div><!-- /.col-md-4 -->
-      <div class="col-md-4">
-        <div class="single-choose-a-plan-section active">
-          <div class="top-box">
-            <div class="name">
-              <h3>Standerd</h3>
-            </div><!-- /.name -->
-            <div class="price">
-              59.00<span>$</span>
-            </div><!-- /.price -->
-            <p>Per Person</p>
-          </div><!-- /.top-box -->
-          <ul>
-            <li><i class="fa fa-circle-thin"></i> 1 Comfortable Seats</li>
-            <li><i class="fa fa-circle-thin"></i> Free Lunch and Coffee</li>
-            <li><i class="fa fa-circle-thin"></i> Certificate</li>
-            <li><i class="fa fa-circle-thin"></i> Easy Access</li>
-          </ul>
-          <a href="#" class="btn">Buy a Ticket</a>
-        </div><!-- /.single-choose-a-plan-section -->
-      </div><!-- /.col-md-4 -->
-      <div class="col-md-4">
-        <div class="single-choose-a-plan-section">
-          <div class="top-box">
-            <div class="name">
-              <h3>Platinum</h3>
-            </div><!-- /.name -->
-            <div class="price">
-              79.00<span>$</span>
-            </div><!-- /.price -->
-            <p>Per Person</p>
-          </div><!-- /.top-box -->
-          <ul>
-            <li><i class="fa fa-circle-thin"></i> 1 Comfortable Seats</li>
-            <li><i class="fa fa-circle-thin"></i> Free Lunch and Coffee</li>
-            <li><i class="fa fa-circle-thin"></i> Certificate</li>
-            <li><i class="fa fa-circle-thin"></i> Easy Access</li>
-          </ul>
-          <a href="#" class="btn">Buy a Ticket</a>
-        </div><!-- /.single-choose-a-plan-section -->
-      </div><!-- /.col-md-4 -->
-    </div><!-- /.row -->
-  </div><!-- /.container -->
-</section><!-- /.choose-a-plan-section -->
-
-<section class="event-gallery-section gray-bg sec-pad">
-  <div class="container-fluid">
-    <div class="sec-title text-center">
-      <h5>Our Gallery</h5>
-      <h2>Event Gallery</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incidi <br />dunt ut labore et dolore magna aliqu enim ad.</p>
-    </div><!-- /.sec-title text-center -->
-    <div class="gallery-carousel owl-carousel owl-theme">
-      <div class="item">
-        <div class="single-gallery-box">
-          <div class="img-box">
-            <%= image_tag('gallery-1.png') %>
-            <div class="overlay">
-              <div class="dt">
-                <div class="dtc">
-                  <ul class="text-center list-inline">
-                    <li><a class="fancybox" href="img/gallery-page-1.jpg"><i class="fa fa-search"></i></a></li>
-                    <li><a href="#"><i class="fa fa-link"></i></a></li>
-                  </ul>
-                </div><!-- /.dtc -->
-              </div><!-- /.dt -->
-            </div><!-- /.overlay -->
-          </div><!-- /.img-box -->
-        </div><!-- /.single-gallery-box -->
-      </div><!-- /.col-md-3 -->
-      <div class="item">
-        <div class="single-gallery-box">
-          <div class="img-box">
-            <%= image_tag('gallery-2.png') %>
-            <div class="overlay">
-              <div class="dt">
-                <div class="dtc">
-                  <ul class="text-center list-inline">
-                    <li><a class="fancybox" href="img/gallery-page-1.jpg"><i class="fa fa-search"></i></a></li>
-                    <li><a href="#"><i class="fa fa-link"></i></a></li>
-                  </ul>
-                </div><!-- /.dtc -->
-              </div><!-- /.dt -->
-            </div><!-- /.overlay -->
-          </div><!-- /.img-box -->
-        </div><!-- /.single-gallery-box -->
-      </div><!-- /.col-md-3 -->
-      <div class="item">
-        <div class="single-gallery-box">
-          <div class="img-box">
-            <%= image_tag('gallery-3.png') %>
-            <div class="overlay">
-              <div class="dt">
-                <div class="dtc">
-                  <ul class="text-center list-inline">
-                    <li><a class="fancybox" href="img/gallery-page-1.jpg"><i class="fa fa-search"></i></a></li>
-                    <li><a href="#"><i class="fa fa-link"></i></a></li>
-                  </ul>
-                </div><!-- /.dtc -->
-              </div><!-- /.dt -->
-            </div><!-- /.overlay -->
-          </div><!-- /.img-box -->
-        </div><!-- /.single-gallery-box -->
-      </div><!-- /.col-md-3 -->
-      <div class="item">
-        <div class="single-gallery-box">
-          <div class="img-box">
-            <%= image_tag('gallery-4.png') %>
-            <div class="overlay">
-              <div class="dt">
-                <div class="dtc">
-                  <ul class="text-center list-inline">
-                    <li><a class="fancybox" href="img/gallery-page-1.jpg"><i class="fa fa-search"></i></a></li>
-                    <li><a href="#"><i class="fa fa-link"></i></a></li>
-                  </ul>
-                </div><!-- /.dtc -->
-              </div><!-- /.dt -->
-            </div><!-- /.overlay -->
-          </div><!-- /.img-box -->
-        </div><!-- /.single-gallery-box -->
-      </div><!-- /.col-md-3 -->
-    </div><!-- /.row -->
-  </div><!-- /.container -->
-</section><!-- /.event-gallery-section -->
 
 <section class="event-sponsor sec-pad">
   <div class="container">
     <div class="sec-title text-center">
-      <h5>Well Wisher</h5>
-      <h2>Event Sponsors</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incidi <br />dunt ut labore et dolore magna aliqu enim ad.</p>
+      <h5>CACIC 2019</h5>
+      <h2>Auspiciantes del evento</h2>
+      <p>Los siguientes son los auspiciantes del evento</p>
     </div><!-- /.sec-title text-center -->
-    <h3 class="sponsor-title text-center">Platinum Sponsors</h3><!-- /.sponsor-title -->
+    <h3 class="sponsor-title text-center">Platino</h3><!-- /.sponsor-title -->
     <br />
     <ul class="sponsor-img-list list-inline text-center">
       <li>
@@ -347,7 +192,7 @@
       </li>
     </ul><!-- /.sponsor-img-list -->
     <br /><br /><br />
-    <h3 class="sponsor-title text-center">Gold Sponsors</h3><!-- /.sponsor-title -->
+    <h3 class="sponsor-title text-center">Oro</h3><!-- /.sponsor-title -->
     <br />
     <ul class="sponsor-img-list list-inline text-center">
       <li>
