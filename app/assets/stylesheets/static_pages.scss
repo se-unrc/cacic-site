@@ -1,3 +1,19 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.cfp {
+  p {
+    line-height: 1.8;
+    font-size: 16px;
+  }
+
+  li {
+   margin-top: 10px;
+  }
+
+  .text-uppercase {
+    margin-top: 25px;
+  }
+}

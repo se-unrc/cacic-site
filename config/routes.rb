@@ -9,5 +9,8 @@ Rails.application.routes.draw do
   get 'static_pages/speakers'
   get 'static_pages/sponsors'
 
+  get 'static_pages/cfp'
+  get "static_pages/download_cpf"
+
   root 'landing#index'
 end
