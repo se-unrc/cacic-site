@@ -17,3 +17,24 @@
     margin-top: 25px;
   }
 }
+
+div.paper-format p {
+  line-height: 2em;
+  font-size: 18px;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.paper-format {
+  li {
+    margin-top: 10px;
+    width: 180px;
+    font-size: 18px;
+  }
+}
+
+.paper-format {
+  ul {
+    text-align: left;
+  }
+}
