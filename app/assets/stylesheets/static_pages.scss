@@ -38,3 +38,31 @@ div.paper-format p {
     text-align: left;
   }
 }
+
+section.workshop div.workshop-content {
+  display: flex;
+
+  flex-flow: column;
+  align-items: center;
+}
+
+section.workshop div.workshop-content ul.workshop-list {
+  list-style: none;
+}
+
+section.workshop div.workshop-content ul.workshop-list li {
+  padding: 5px;
+}
+
+section.workshop div.workshop-content ul.workshop-list li a {
+  display: block;
+}
+
+section.workshop div.workshop-content ul.workshop-list li:hover{
+  cursor: pointer;
+  background: #c4c2c4;
+}
+
+section.workshop div.workshop-content ul.workshop-list li:hover a {
+  color: #fc5a1b;
+}

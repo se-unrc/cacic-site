@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   get 'static_pages/cfp'
   get "static_pages/download_cpf"
+  get "static_pages/workshops"
 
   get 'static_pages/format_paper'
   resources :paper_format_download,
