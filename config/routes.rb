@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   get 'static_pages/download_cpf'
   get 'static_pages/workshops'
 
-  get 'workshops/:slug', to: 'workshops#show '
+  get 'workshops/:slug', to: 'workshops#show'
 
   get 'static_pages/format_paper'
   resources :paper_format_download,
