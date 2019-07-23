@@ -28,7 +28,7 @@ class StaticPagesController < ApplicationController
 
     send_file(
       "#{Rails.root}/app/assets/images/paper-format/#{file_hash.fetch(filename)}",
-      filename: filename,
+      filename: file_hash.fetch(filename),
       type: 'application/zip')
   end
 
