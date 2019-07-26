@@ -18,11 +18,15 @@
     <div class="row">
       <div class="col-md-7">
         <form action="https://formspree.io/cacic2019@dc.exa.unrc.edu.ar" method="POST"/>
-          <input type="text" name="nombre" placeholder="Nombre"/>
-          <input type="text" name="apellido" placeholder="Apellido"/>
-          <input type="text" name="numero" placeholder="Numero de Telefono"/>
-          <textarea name="mensaje" placeholder="Mensaje"></textarea>
-          <button type="submit" class="btn">Enviar Mensaje</button>
+          <div id="mensaje1" class="form-error">Ingrese su Nombre</div>
+          <input type="text" id="form-nombre" name="nombre" placeholder="Nombre"/>
+          <div id="mensaje2" class="form-error">Ingrese su Apellido</div>
+          <input type="text" id="form-apellido" name="apellido" placeholder="Apellido"/>
+          <div id="mensaje3" class="form-error">Ingrese su numero</div>
+          <input type="text" id="form-numero" name="numero" placeholder="Numero de Telefono"/>
+          <div id="mensaje4" class="form-error">Ingrese el Mensaje</div>
+          <textarea id="form-mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+          <button type="submit" id="enviar" class="btn">Enviar Mensaje</button>
         </form>
       </div><!-- /.col-md-8 -->
       <div class="col-md-5">
@@ -72,6 +76,51 @@
       zoom: 15
     });
   }
+
+  $("#enviar").click(function(){
+
+    var nombre = $("#form-nombre").val();
+    var apellido = $("#form-apellido").val();
+    var numero = $("#form-numero").val();
+    var mensaje = $("#form-mensaje").val();
+    var validacion_numero = /^([0-9])*$/;
+
+    if (nombre == "") {
+
+      $("#mensaje1").fadeIn();
+      return false;
+
+    }else {
+
+      $("#mensaje1").fadeOut();
+
+        if (apellido == "") {
+          $("#mensaje2").fadeIn();
+          return  false;
+        }else{
+
+          $("#mensaje2").fadeOut();
+          if (numero == "" || !validacion_numero.test(numero)) {
+
+            $("#mensaje3").fadeIn();
+            return false;
+
+          }else{
+
+            $("#mensaje3").fadeOut();
+            if (mensaje == ""){
+
+              $("#mensaje4").fadeIn();
+              return false;
+
+            }
+
+          }
+
+        }
+
+    }
+  });
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA59rHhCakhATZWRrsqWAYy4WsMi3bz8TM&callback=initMap"
