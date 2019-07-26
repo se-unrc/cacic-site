@@ -13,6 +13,9 @@ Rails.application.routes.draw do
   get 'static_pages/download_cpf'
   get 'static_pages/workshops'
 
+  get 'static_pages/school'
+  get 'static_pages/athenaeum'
+
   get 'workshops/:slug', to: 'workshops#show'
 
   get 'static_pages/format_paper'
