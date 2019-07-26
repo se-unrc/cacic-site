@@ -18,15 +18,15 @@
     <div class="row">
       <div class="col-md-7">
         <form action="https://formspree.io/cacic2019@dc.exa.unrc.edu.ar" method="POST"/>
-          <div id="mensaje1" class="form-error">Ingrese su Nombre</div>
-          <input type="text" id="form-nombre" name="nombre" placeholder="Nombre"/>
-          <div id="mensaje2" class="form-error">Ingrese su Apellido</div>
-          <input type="text" id="form-apellido" name="apellido" placeholder="Apellido"/>
-          <div id="mensaje3" class="form-error">Ingrese su numero</div>
-          <input type="text" id="form-numero" name="numero" placeholder="Numero de Telefono"/>
-          <div id="mensaje4" class="form-error">Ingrese el Mensaje</div>
-          <textarea id="form-mensaje" name="mensaje" placeholder="Mensaje"></textarea>
-          <button type="submit" id="enviar" class="btn">Enviar Mensaje</button>
+          <div id="message-error-1" class="form-error">Ingrese su Nombre</div>
+          <input type="text" id="form-name" name="name" placeholder="nombre"/>
+          <div id="message-error-2" class="form-error">Ingrese su Apellido</div>
+          <input type="text" id="form-surname" name="surname" placeholder="Apellido"/>
+          <div id="message-error-3" class="form-error">Ingrese su Numero</div>
+          <input type="text" id="form-number" name="number" placeholder="numero de Telefono"/>
+          <div id="message-error-4" class="form-error">Ingrese el Mensaje</div>
+          <textarea id="form-message-error-" name="message-error-" placeholder="Mensaje"></textarea>
+          <button type="submit" id="enviar" class="btn">Enviar el Mensaje</button>
         </form>
       </div><!-- /.col-md-8 -->
       <div class="col-md-5">
@@ -48,7 +48,7 @@
                 <i class="fa fa-phone"></i>
               </div><!-- /.icon-box -->
               <div class="text-box">
-                <h3>Numero </h3>
+                <h3>number </h3>
                 <p>[+54] 358 467-6235</p>
               </div><!-- /.text-box -->
             </li>
@@ -79,38 +79,38 @@
 
   $("#enviar").click(function(){
 
-    var nombre = $("#form-nombre").val();
-    var apellido = $("#form-apellido").val();
-    var numero = $("#form-numero").val();
-    var mensaje = $("#form-mensaje").val();
-    var validacion_numero = /^([0-9])*$/;
+    var name = $("#form-name").val();
+    var surname = $("#form-surname").val();
+    var number = $("#form-number").val();
+    var message = $("#form-message-error-").val();
+    var validation_number = /^([0-9])*$/;
 
-    if (nombre == "") {
+    if (name == "") {
 
-      $("#mensaje1").fadeIn();
+      $("#message-error-1").fadeIn();
       return false;
 
     }else {
 
-      $("#mensaje1").fadeOut();
+      $("#message-error-1").fadeOut();
 
-        if (apellido == "") {
-          $("#mensaje2").fadeIn();
+        if (surname == "") {
+          $("#message-error-2").fadeIn();
           return  false;
         }else{
 
-          $("#mensaje2").fadeOut();
-          if (numero == "" || !validacion_numero.test(numero)) {
+          $("#message-error-2").fadeOut();
+          if (number == "" || !validacion_number.test(number)) {
 
-            $("#mensaje3").fadeIn();
+            $("#message-error-3").fadeIn();
             return false;
 
           }else{
 
-            $("#mensaje3").fadeOut();
-            if (mensaje == ""){
+            $("#message-error-3").fadeOut();
+            if (message == ""){
 
-              $("#mensaje4").fadeIn();
+              $("#message-error-4").fadeIn();
               return false;
 
             }
