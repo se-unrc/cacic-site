@@ -21,4 +21,5 @@
  *= require responsive
  *= require static_pages
  *= require style
+ *= require registration
  */

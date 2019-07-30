@@ -1,0 +1,18 @@
+	div.register-form {
+		width: 600px;
+		margin: auto;
+		padding: 10px;
+	}
+
+	div.register-form form div > input, label {
+		margin: 10px;
+	}
+
+	div.register-form form div label[for="register-category"]{
+		margin-bottom: 0;
+	}
+
+	div.register-form form div label select#register-category {
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
