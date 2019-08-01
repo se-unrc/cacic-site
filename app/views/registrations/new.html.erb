@@ -1,9 +1,9 @@
 <section class="page-title">
   <div class="container">
-    <h2>Registracion</h2>
+    <h2>Registro</h2>
     <ul class="list-inline">
       <li><a href="/">Home</a></li>
-      <li><a href="#"><i class="fa fa-angle-right"></i> Registracion</a></li>
+      <li><a href="#"><i class="fa fa-angle-right"></i> Registro</a></li>
     </ul><!-- /.list-inline -->
   </div><!-- /.container -->
 </section><!-- /.page-title -->
@@ -24,20 +24,20 @@
   	  <input class="form-control" type="text" name="curso" placeholder="Curso">
   	  <input class="form-control" type="checkbox" name="beca">Beca
     </form> -->
-		 <form>
+		 <form  id="regForm">
 		  <div class="form-group">
 		    <label for="register-surname">Apellido</label>
-		    <input type="text" class="form-control" id="register-surname" placeholder="Apellido">
+		    <input type="text" class="form-control" id="register-surname" name="registerSurname" placeholder="Apellido">
 		    <label for="register-name">Nombres</label>
-		    <input type="text" class="form-control" id="register-name" placeholder="Nombres">
+		    <input type="text" class="form-control" id="register-name" name="registerName" placeholder="Nombres">
 		    <label for="register-dni">DNI</label>
-		    <input type="text" class="form-control" id="register-dni" placeholder="DNI">
-		    <label for="register-email">Email</label>
-    		<input type="email" class="form-control" id="register-email" placeholder="Email">
+		    <input type="text" class="form-control" id="register-dni" name="registerDni" placeholder="DNI">
+				<label for="register-email">Email</label>
+				<input type="email" class="form-control" id="register-email" name="registerEmail" placeholder="Email">
 		  </div>
 		  <div class="form-group">
 		    <label for="register-category">Categoria
-			    <select class="form-control" id="register-category">
+			    <select class="form-control" id="register-category" >
 				    <option>Alumno de un pert. a RedUNCI</option>
 		  	    <option>Alumno de otra institución</option>
 		  	    <option>Otro</option>
@@ -49,7 +49,10 @@
 		      <input type="checkbox"> Beca
 		    </label>
 		  </div>
-		  <button type="submit" class="btn btn-default">Registrarse</button>
+		  <button type="submit" id="register-send" class="btn btn-default">Registrarse</button>
 		</form>
   </div>
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.js"></script>
