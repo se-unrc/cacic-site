@@ -1,4 +1,4 @@
-div.register-form {
+div.registerForm {
 	max-width: 600px;
 	width: auto;
 	margin: auto;
@@ -6,20 +6,20 @@ div.register-form {
 
 }
 
-div.register-form form div > input, label {
+div.registerForm form div > input, label {
 	margin: 10px;
 	width: 100%;
 }
 
-div.register-form form div label[class="error"]{
+div.registerForm form div label[class="error"]{
 	color: red;
 }
 
-div.register-form form div label[for="register-category"]{
+div.registerForm form div label[for="registerCategory"]{
 	margin-bottom: 0;
 }
 
-div.register-form form div label select#register-category {
+div.registerForm form div label select#registerCategory {
 	margin-top: 10px;
 	margin-bottom: 0;
 }

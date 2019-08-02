@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-	$('#register-send').on('click', function(){
+	$('#registerSend').on('click', function(){
 		$('#regForm').validate
 		({
 			rules:

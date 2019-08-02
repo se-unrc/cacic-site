@@ -9,21 +9,21 @@
 </section><!-- /.page-title -->
 
 <section>
-  <div class="register-form">
+  <div class="registerForm">
 		 <form id="regForm" action="https://formspree.io/registracioncacic19@dc.exa.unrc.edu.ar" method="POST"/>
 		  <div class="form-group">
-		    <label for="register-surname">Apellido</label>
-		    <input type="text" class="form-control" id="register-surname" name="registerSurname" placeholder="Apellido">
-		    <label for="register-name">Nombres</label>
-		    <input type="text" class="form-control" id="register-name" name="registerName" placeholder="Nombres">
-		    <label for="register-dni">DNI</label>
-		    <input type="text" class="form-control" id="register-dni" name="registerDni" placeholder="DNI">
-				<label for="register-email">Email</label>
-				<input type="email" class="form-control" id="register-email" name="registerEmail" placeholder="Email">
+		    <label for="registerSurname">Apellido</label>
+		    <input type="text" class="form-control" id="registerSurname" name="registerSurname" placeholder="Apellido">
+		    <label for="registerName">Nombres</label>
+		    <input type="text" class="form-control" id="registerName" name="registerName" placeholder="Nombres">
+		    <label for="registerDni">DNI</label>
+		    <input type="text" class="form-control" id="registerDni" name="registerDni" placeholder="DNI">
+				<label for="registerEmail">Email</label>
+				<input type="email" class="form-control" id="registerEmail" name="registerEmail" placeholder="Email">
 		  </div>
 		  <div class="form-group">
-		    <label for="register-category">Categoria
-			    <select class="form-control" id="register-category" >
+		    <label for="registerCategory">Categoria
+			    <select class="form-control" id="registerCategory" name="registerCategory">
 				    <option>Alumno de un pert. a RedUNCI</option>
 			    <option>Alumno de otra institución</option>
 			    <option>Otro</option>
@@ -32,10 +32,10 @@
 		  </div>
 		  <div class="checkbox">
 		    <label>
-		      <input type="checkbox"> Beca
+		      <input type="checkbox" name="registerBeca"> Beca
 		    </label>
 		  </div>
-		  <button type="submit" id="register-send" class="btn btn-default">Registrarse</button>
+		  <button type="submit" id="registerSend" name="registerSend" class="btn btn-default">Registrarse</button>
 		</form>
   </div>
 </section>
