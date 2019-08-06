@@ -21,4 +21,5 @@
 //= requrie cable
 //= require countdown.min
 //= require custom
+//= require contact
 //= require owl.carousel.min

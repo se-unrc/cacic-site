@@ -1,0 +1,27 @@
+section.contact-section div.container div.row div.col-md-7 form#formContact input, textarea#formMessage {
+	border: 1px solid black;
+ }
+
+section.contact-section div.container div.row div.col-md-7 form#formContact label {
+	margin: 10px;
+	font-size: 14px;
+	padding: 10px;
+}
+
+
+section.contact-section div.container div.row div.col-md-7 form#formContact label.error {
+	color: red;
+  font-weight: bold;
+  display: none;
+  font-size: 14px;
+  padding: 10px; 
+  padding-bottom: 0;
+  width: 100%;
+  text-align: right;
+}
+
+section.contact-section div.container div.row div.col-md-7 form#formContact label#formMessage-error {
+	margin-bottom: 30px;
+}
+
+
