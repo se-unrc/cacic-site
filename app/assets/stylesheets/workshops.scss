@@ -1,0 +1,50 @@
+section.workshop div.workshop-content {
+  display: flex;
+
+  flex-flow: column;
+  align-items: center;
+}
+
+section.workshop div.workshop-content h3 {
+  font-size: 30px;
+  color: rgb(20, 47, 122);
+}
+
+section.workshop div.workshop-content ul.workshop-list {
+  list-style: none;
+}
+
+section.workshop div.workshop-content ul.workshop-list li {
+  padding: 5px;
+  font-size: 17px;
+}
+
+section.workshop div.workshop-content ul.workshop-list li a {
+  display: block;
+}
+
+section.workshop div.workshop-content ul.workshop-list li:hover{
+  cursor: pointer;
+  background: #c4c2c4;
+}
+
+section.workshop div.workshop-content ul.workshop-list li:hover a {
+  color: #fc5a1b;
+}
+
+section.section-workshops div.container-workshops {
+  display: flex;
+
+  flex-flow: column;
+  align-items: center;
+}
+
+section.section-workshops div.container-workshops h3 {
+  color: rgb(20, 47, 122);
+  font-size: 30px;
+}
+
+section.section-workshops div.container-workshops ul li {
+  padding: 5px;
+  font-size: 17px;
+}
