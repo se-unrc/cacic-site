@@ -26,4 +26,6 @@ Rails.application.routes.draw do
 
 
   root 'landing#index'
+
+  get 'registration', to: 'registrations#new'
 end
