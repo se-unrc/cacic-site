@@ -1,0 +1,66 @@
+<section class="page-title">
+  <div class="container">
+    <h2>Registro</h2>
+    <ul class="list-inline">
+      <li><a href="/">Home</a></li>
+      <li><a href="#"><i class="fa fa-angle-right"></i> Registro</a></li>
+    </ul><!-- /.list-inline -->
+  </div><!-- /.container -->
+</section><!-- /.page-title -->
+
+<section>
+  <div class="registerForm">
+     <form id="regForm" action="https://formspree.io/registracioncacic19@dc.exa.unrc.edu.ar" method="POST"/>
+      <div class="form-group">
+        <label for="registerSurname">Apellido</label>
+        <input type="text" class="form-control" id="registerSurname" name="registerSurname" placeholder="Apellido">
+        <label for="registerName">Nombres</label>
+        <input type="text" class="form-control" id="registerName" name="registerName" placeholder="Nombres">
+        <label for="registerDni">DNI</label>
+        <input type="text" class="form-control" id="registerDni" name="registerDni" placeholder="DNI">
+        <label for="registerEmail">Email</label>
+        <input type="email" class="form-control" id="registerEmail" name="registerEmail" placeholder="Email">
+        <label for="registerPais">Pais</label>
+        <input type="text" class="form-control" id="registerPais" name="registerPais" placeholder="Pais">
+        <label for="registerProvincia">Provincia</label>
+        <input type="text" class="form-control" id="registerProvincia" name="registerProvincia" placeholder="Provincia">
+        <label for="registerCiudad">Ciudad</label>
+        <input type="text" class="form-control" id="registerCiudad" name="registerCiudad" placeholder="Ciudad">
+      </div>
+      <div class="form-group">
+        <label for="registerCategory">Categoria
+          <select class="form-control" id="registerCategory" name="registerCategory">
+            <option>Alumno de un pert. a RedUNCI</option>
+            <option>Alumno de otra institución</option>
+            <option>Otro</option>
+          </select>
+        </label>
+      </div>
+      <div class="form-check">
+        <label id="errorCourse">Elige Un Curso</label>
+        <label>
+          <input type="radio" name="registerRadio" value="Curso1: Software Testing">Software Testing
+        </label>
+        <label>
+          <input type="radio" name="registerRadio" value="Curso2: Construcción de Software Robusto con TDD">Construcción de Software Robusto con TDD
+        </label>
+        <label>
+          <input type="radio" name="registerRadio" value="Curso3: Programación Probabilística: Teoría y Práctica">Programación Probabilística: Teoría y Práctica
+        </label>
+        <label>
+          <input type="radio" name="registerRadio" value="Curso4: Lógica para Computación">Lógica para Computación
+        </label>
+      </div>
+      <div class="form-check">
+        <label>¿Tienes Beca?</label>
+        <label>
+          <input type="checkbox" id="registerBeca" name="registerBeca"> Beca
+        </label>
+      </div>
+      <button type="submit" id="registerSend" name="registerSend" class="btn btn-default">Registrarse</button>
+    </form>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.js"></script>
