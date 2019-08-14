@@ -16,23 +16,66 @@
     </center>
     <ul class="courses">
       <li>
-        <h3> <bold>Curso 1</bold>: Software Testing</h3>
+        <h3> <bold>Curso 1</bold>: <a href="#" onclick="toggleCourse('curso1'); return false;">Software Testing</a></h3>
         <h4> A cargo de: <%= link_to 'Marcelo D’Amorim', 'https://www.cin.ufpe.br/~damorim/', target: '_blank' %></h4>
+
+        <div id="curso1" class="description">
+        </div>
       </li>
+
       <li>
-        <h3> <bold>Curso 2</bold>: Construcción de Software Robusto con TDD</h3>
+        <h3> <bold>Curso 2</bold>: <a href="#" onclick="toggleCourse('curso2'); return false;">Construcción de Software Robusto con TDD</a> </h3>
+
         <h4> A cargo de: <%= link_to 'Hernán Wilkinson', 'https://www-2.dc.uba.ar/staff/hwilkinson/', target: "_blank" %> </h4>
+
+        <div id="curso2" class="description">
+          <strong>Requisitos del curso</strong> <br>
+          Es importante que se tengan conocimientos de programación ya que es un curso completamente práctico. <br>
+          Los lenguajes a usar pueden ser Smalltalk, Java, C#, Python, Ruby, JavaScript y PHP.
+          <br>
+          Los requerimientos de máquina es que tengan el lenguaje instalado con el IDE y el framework xUnit correspondiente. <br>
+          <br>
+          <strong>Contenido del Curso</strong> <br>
+          El objetivo de este curso es transmitirte la técnica de desarrollo ágil denominada Test Driven Development (TDD), utilizando para ello ejemplos prácticos y cotidianos. El curso parte de una breve introducción teórica para luego concentrarse en ejercicios prácticos especialmente preparados para que aprendas la técnica, puesto que creemos que 'la mejor manera de aprender es haciendo'. <br>
+          <br>
+          <a href="https://university.10pines.com/course_contents/4-construccion-de-software-robusto-con-tdd">Descripción completa del curso</a>
+        </div>
       </li>
 
       <li>
-        <h3> <bold>Curso 3</bold>: Programación Probabilística: Teoría y Práctica</h3>
+        <h3> <bold>Curso 3</bold>: <a href="#" onclick="toggleCourse('curso3'); return false;">Programación Probabilística: Teoría y Práctica</a></h3>
         <h4>A cargo de: <%= link_to 'Federico Olmedo', 'https://www.dcc.uchile.cl/federico_olmedo', target: "_blank" %></h4>
+
+        <div id="curso3" class="description">
+        </div>
       </li>
 
       <li>
-        <h3> <bold>Curso 4</bold>: Lógica para Computación</h3>
+        <h3> <bold>Curso 4</bold>: <a href="#" onclick="toggleCourse('curso4'); return false;">
+          Lógica para Computación</a></h3>
         <h4>A cargo de: <%= link_to 'Marcelo Frias', '#', target: "_blank" %></h4>
+
+        <div id="curso4" class="description">
+          <strong>Requisitos del curso</strong>
+          Conocimientos básicos de matemática discreta <br>
+          Conocimientos básicos de lógica booleana <br>
+          <br>
+          <strong>Contenidos del Curso</strong> <br>
+          Lógica proposicional: definiciones y limitaciones <br>
+          Lógica de predicados: definiciones y limitaciones <br>
+          Lógica relacional <br>
+          Especificación de programas: precondición más débil, corrección parcial y corrección total de programas <br>
+          Java Modeling Language: un lenguaje para la especificación de programas <br>
+          Detección automática de fallas en programas <br>
+          Reparación automática de fallas en programas
+        </div>
       </li>
     </ul>
   </div>
 </section>
+
+<script type="text/javascript">
+  function toggleCourse(id) {
+    $(`.school ul.courses li div#${id}`).toggle();
+  }
+</script>
