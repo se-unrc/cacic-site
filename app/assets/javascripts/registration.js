@@ -1,91 +1,47 @@
-$( document ).ready(function() {
-	$('#registerSend').on('click', function(){
-		$('#regForm').validate
-		({
-			rules:
-			{
-				registerSurname:
-				{
-				 required: true,
-				},
-				registerName:
-				{
-					required: true,
-				},
-				registerDni:
-				{
-					required: true
-				},
-				registerEmail:
-				{
-					required: true,
-					email: true
-				},
-				registerPais:
-				{
-					required: true
-				},
-				registerProvincia:
-				{
-					required: true
-				},
-				registerCiudad:
-				{
-					required: true
-				},
-				registerRadio:
-				{
-					required: true
-				}
-			},
-			messages:
-			{
-				registerSurname:
-				{
-					required: 'Su apellido es requerido.',
-				},
-				registerName: {
-					required: 'Su nombre es requierido.',
-				},
-				registerDni:
-				{
-					required: 'Su numero de documento es requerido.'
-				},
-				registerEmail:
-				{
-					required: 'Su email es requerido.',
-					email: 'Ingrese una dirección de correo valida.'
-				},
-				registerPais:
-				{
-					required: 'Su pais es necesario.'
-				},
-				registerProvincia:
-				{
-					required: 'Su provincia es necesario.'
-				},
-				registerCiudad:
-				{
-					required: 'Su ciudad es necesario.'
-				},
-				registerRadio:
-				{
-					required: 'El curso que va a tomar es necesario.'
-				}
-			},
-			groups:
-			{
-				course: "registerRadio"
-			},
-			errorPlacement: function(error, element){
-				if (element.attr('name') == "registerRadio") {
-				error.insertAfter('#errorCourse');
-				}
-				else{
-					error.insertAfter(element)
-				}
+$(document).ready(function() {
+	$("#regForm").submit(function(e) { 
+	  if ($("#first_name").val() === "") {
+	    alert("Su nombre es requerido.");
+			e.preventDefault();
+			return false
+	  }
 
+	  if ($("#last_name").val() === "") {
+	    alert("Su apellido es requerido");
+			e.preventDefault();
+			return false
+	  }
+
+	  if ($("#dni").val() === "") {
+	    alert("Su numero de documento es requerido");
+			e.preventDefault();
+			return false
+	  }
+
+	  if ($("#email").val() === "") {
+	    alert("Su email es requerido. Ingrese una dirección de correo valida.");
+			e.preventDefault();
+			return false
+	  }
+
+	  if ($('input[type=radio]:checked').length === 0) {
+	  	alert("Tiene que elegir un curso");
+			e.unbind();
+			e.preventDefault();
+			return false	
+	  }
+
+	  // send data to our server
+		$.ajax({
+			url: "http://cacic2019.exa.unrc.edu.ar/registration",
+			type: "POST",
+			data: $(this).serializeArray(),
+			success: function(data, textStatus, jqXHR) {
+			  console.log("success... ", data);
+			},
+			error: function(jqXHR, textStatus, errorThrown) {
+			  console.log("error... ", textStatus);
 			}
 		});
-	});
+	})
 });

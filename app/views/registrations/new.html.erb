@@ -9,58 +9,70 @@
 </section><!-- /.page-title -->
 
 <section>
-  <div class="registerForm">
-     <form id="regForm" action="https://formspree.io/registracioncacic19@dc.exa.unrc.edu.ar" method="POST"/>
-      <div class="form-group">
-        <label for="registerSurname">Apellido</label>
-        <input type="text" class="form-control" id="registerSurname" name="registerSurname" placeholder="Apellido">
-        <label for="registerName">Nombres</label>
-        <input type="text" class="form-control" id="registerName" name="registerName" placeholder="Nombres">
-        <label for="registerDni">DNI</label>
-        <input type="text" class="form-control" id="registerDni" name="registerDni" placeholder="DNI">
-        <label for="registerEmail">Email</label>
-        <input type="email" class="form-control" id="registerEmail" name="registerEmail" placeholder="Email">
-        <label for="registerPais">Pais</label>
-        <input type="text" class="form-control" id="registerPais" name="registerPais" placeholder="Pais">
-        <label for="registerProvincia">Provincia</label>
-        <input type="text" class="form-control" id="registerProvincia" name="registerProvincia" placeholder="Provincia">
-        <label for="registerCiudad">Ciudad</label>
-        <input type="text" class="form-control" id="registerCiudad" name="registerCiudad" placeholder="Ciudad">
-      </div>
-      <div class="form-group">
-        <label for="registerCategory">Categoria
-          <select class="form-control" id="registerCategory" name="registerCategory">
-            <option>Alumno de un pert. a RedUNCI</option>
-            <option>Alumno de otra institución</option>
-            <option>Otro</option>
-          </select>
-        </label>
-      </div>
-      <div class="form-check">
-        <label id="errorCourse">Elige Un Curso</label>
-        <label>
-          <input type="radio" name="registerRadio" value="Curso1: Software Testing">Software Testing
-        </label>
-        <label>
-          <input type="radio" name="registerRadio" value="Curso2: Construcción de Software Robusto con TDD">Construcción de Software Robusto con TDD
-        </label>
-        <label>
-          <input type="radio" name="registerRadio" value="Curso3: Programación Probabilística: Teoría y Práctica">Programación Probabilística: Teoría y Práctica
-        </label>
-        <label>
-          <input type="radio" name="registerRadio" value="Curso4: Lógica para Computación">Lógica para Computación
-        </label>
-      </div>
-      <div class="form-check">
-        <label>¿Tienes Beca?</label>
-        <label>
-          <input type="checkbox" id="registerBeca" name="registerBeca"> Beca
-        </label>
-      </div>
-      <button type="submit" id="registerSend" name="registerSend" class="btn btn-default">Registrarse</button>
-    </form>
-  </div>
-</section>
+  <form id="regForm" action="https://formspree.io/registracioncacic19@dc.exa.unrc.edu.ar" method="POST"/>
+    <div class="registerForm">
+      <div class="column">
+        <h2>Datos Personales</h2>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.js"></script>
+        <input type="text" class="form-control" id="last_name" name="registration[last_name]" placeholder="Apellido">
+        <input type="text" class="form-control" id="first_name" name="registration[first_name]" placeholder="Nombres">
+        <input type="text" class="form-control" id="dni" name="registration[dni]" placeholder="DNI">
+        <input type="email" class="form-control" id="email" name="registration[email]" placeholder="Email">
+        <input type="text" class="form-control" id="country" name="registration[country]" placeholder="Pais">
+        <input type="text" class="form-control" id="province" name="registration[province]" placeholder="Provincia">
+        <input type="text" class="form-control" id="city" name="registration[city]" placeholder="Ciudad">
+      </div>
+
+      <div class="column">
+        <h2>Datos de Filiación</h2>
+
+        <input type="text" class="form-control" id="university" name="registration[university]" placeholder="institución">
+
+        <select class="form-control" id="category" name="registration[category]">
+          <option>Alumno perteneciente a RedUNCI</option>
+          <option>Alumno de otra institución</option>
+          <option>Profesional</option>
+          <option>Otro</option>
+        </select>
+      </div>
+
+      <div class="column course">
+        <h1>Curso</h1>
+
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="registration[course]" value="Curso1: Software Testing">
+          Software Testing
+        </label>
+
+        <label>
+          <input type="radio" name="registration[course]" value="Curso2: Construcción de Software Robusto con TDD"> 
+          Construcción de Software Robusto con TDD
+        </label> 
+
+        <label>
+          <input type="radio" name="registration[course]" value="Curso3: Programación Probabilística: Teoría y Práctica">
+          Programación Probabilística: Teoría y Práctica
+        </label>
+
+        <label>
+          <input type="radio" name="registration[course]" value="Curso4: Lógica para Computación">
+          Lógica para Computación
+        </label>
+
+        <div class="form-check">
+          <label>
+            <input type="checkbox" id="scholarship" name="registration[scholarship]"> Requiere Beca
+          </label>
+        </div>
+      </div>
+
+      <div class="break"></div>
+
+      <div class="button">
+        <button type="submit" id="registerSend" name="registration[registerSend]" class="btn btn-default">
+          Registrarse
+        </button>
+      </div>
+    </div>
+  </form>
+</section>

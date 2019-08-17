@@ -1,25 +1,53 @@
 div.registerForm {
-	max-width: 600px;
+	max-width: 1200px;
 	width: auto;
 	margin: auto;
 	padding: 10px;
-
+	display: flex;
+  flex-wrap: wrap;
 }
 
-div.registerForm form div > input, label {
+div.registerForm input, label {
+	padding: 10px;
 	margin: 10px;
-	width: 100%;
+}
+
+div.registerForm .course input, label {
+	margin: 0px;
 }
 
 div.registerForm form div label[class="error"]{
 	color: red;
 }
 
-div.registerForm form div label[for="registerCategory"]{
-	margin-bottom: 0;
+div.registerForm select#category {
+	margin: 10px;
 }
 
-div.registerForm form div label select#registerCategory {
-	margin-top: 10px;
-	margin-bottom: 0;
+div.registerForm .column {
+	flex-grow: 1;
+  width: 33%;
+  padding: 10px;
+}
+
+div.registerForm .button {
+	flex: 1 1;
+	text-align: center;
+}
+
+div.registerForm .break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+@media(max-width:768px) {
+  div.registerForm {
+    flex-flow: column;
+  }
+
+  div.registerForm .column {
+		flex-grow: 1;
+	  width: 98%;
+	  padding: 10px;
+	}
 }
