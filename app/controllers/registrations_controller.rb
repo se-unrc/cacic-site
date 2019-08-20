@@ -2,6 +2,7 @@ class RegistrationsController < ApplicationController
 
   def create
     Registration.create(registration_params)
+    ConfirmationMailer.send_confirmation(registration_params).deliver_now
   end
 
   private

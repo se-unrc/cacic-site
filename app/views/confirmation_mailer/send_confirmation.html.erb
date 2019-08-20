@@ -1,0 +1,21 @@
+<h3>Gracias por su inscripción, <%= @params[:first_name] %></h3>
+
+<p>
+  Usted se ha inscripto al curso <%= @params[:course] %>
+</p>
+
+<p>
+  Sus datos de inscripción son los siguientes:
+</p>
+
+<ul>
+<% @params.each do |param| %>
+  <li><%= param.first %>: <%= param.last %> </li>
+<% end %>
+<ul>
+
+<p></p>
+<br>
+
+Saludos cordiales,<br>
+comité organizador CACIC 2019.
