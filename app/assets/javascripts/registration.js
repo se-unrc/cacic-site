@@ -33,7 +33,7 @@ $(document).ready(function() {
 
 	  // send data to our server
 		$.ajax({
-			url: "http://cacic2019.exa.unrc.edu.ar/registration",
+			url: "https://cacic2019.exa.unrc.edu.ar/registration",
 			type: "POST",
 			data: $(this).serializeArray(),
 			success: function(data, textStatus, jqXHR) {
