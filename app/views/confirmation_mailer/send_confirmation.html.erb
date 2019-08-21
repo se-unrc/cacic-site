@@ -12,10 +12,26 @@
 <% @params.each do |param| %>
   <li><%= param.first %>: <%= param.last %> </li>
 <% end %>
-<ul>
+</ul>
 
-<p></p>
 <br>
 
 Saludos cordiales,<br>
-comité organizador CACIC 2019.
+
+Comité organizador CACIC 2019.<br><br>
+
+<a href="<%= landing_index_url %>">
+  <%= image_tag('logo-cacic.png', size: '180x40') %>
+</a>
+
+ <h4>Organizan:</h4><!-- /.organization-title -->
+    <ul class="sponsor-img-list list-inline">
+      <li>
+        <%= link_to image_tag('sponsors/redunci.gif'), 'http://redunci.info.unlp.edu.ar/', target: "_blank" %>
+      </li>
+      <li>
+          <%= link_to image_tag('sponsors/unrc.png'), 'https://www.unrc.edu.ar/', target: "_blank" %>
+        </li>
+    </ul>
+
+
