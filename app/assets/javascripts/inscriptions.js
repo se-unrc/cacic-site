@@ -26,7 +26,6 @@ $(document).ready(function() {
 
 	  if ($('input[type=radio]:checked').length === 0) {
 	  	alert("Tiene que elegir un curso");
-			e.unbind();
 			e.preventDefault();
 			return false	
 	  }
