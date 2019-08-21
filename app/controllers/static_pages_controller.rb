@@ -42,5 +42,8 @@ class StaticPagesController < ApplicationController
 
   def workshops
   end
+
+  def accommodation
+  end
   
 end
