@@ -22,4 +22,3 @@
 //= require countdown.min
 //= require custom
 //= require owl.carousel.min
-//= require inscriptions
