@@ -27,6 +27,6 @@ Rails.application.routes.draw do
 
   root 'landing#index'
 
-  get 'registration', to: 'registrations#new'
-  post 'registration', to: 'registrations#create'
+  get 'registration', to: 'inscriptions#new'
+  post 'registration', to: 'inscriptions#create'
 end

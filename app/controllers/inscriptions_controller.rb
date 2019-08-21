@@ -1,4 +1,5 @@
-class RegistrationsController < ApplicationController
+class InscriptionsController < ApplicationController
+  skip_before_action :verify_authenticity_token, :only => :create
 
   def create
     Registration.create(registration_params)
