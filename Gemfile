@@ -23,6 +23,8 @@ gem 'uglifier', '>= 1.3.0'
 
 gem 'jquery-rails'
 gem "font-awesome-rails"
+gem 'country_select', '~> 4.0'
+
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
