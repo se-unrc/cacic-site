@@ -201,8 +201,52 @@
 }
 
 @media(max-width: 480px) {
+  section.banner {
+    padding-top: 180px;
+    padding-bottom: 50px;
+  }
+
+  section.banner div.container div.col-md-6 h2.stopfade{
+    font-size: 32px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+
+  section.banner div.container div.col-md-6 ul.coundown {
+    margin: 20px;
+  }
+
+  section.about-section div.container div.sepia img {
+    height: 320px;
+  }
+
+  section.counter-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  section.counter-section div.container div {
+    padding: 10px;
+    margin: 5px;
+  }
+
   .school ul.courses {
     padding: 5px;
     text-align: left;
+  }
+
+  section.event-sponsor div.container ul.sponsor-img-list li {
+      padding: 15px;
+      margin: 15px;
+  }
+
+  nav.navbar div.container div.navbar-header a img {
+    width: auto;
+    height: auto;
+  }
+
+  section.blog-section div.container div.row {
+    width: 100%;
   }
 }
