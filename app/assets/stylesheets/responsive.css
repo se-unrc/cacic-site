@@ -253,4 +253,10 @@
   nav.navbar div.collapse {
     margin: 0;
   }
+
+  section.speaker-section div.container div.row {
+    width: 100%;
+    margin: auto;
+    padding: auto;
+  }
 }
