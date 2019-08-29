@@ -247,6 +247,7 @@
 
   section.blog-section div.container div.row {
     width: 100%;
+    margin: auto;
   }
 
   nav.navbar div.collapse {
