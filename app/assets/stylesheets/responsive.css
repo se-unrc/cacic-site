@@ -292,4 +292,9 @@
   section.contact-section div.container div.row div.col-md-7 form input {
     width: 100%;
   }
+
+  section.event-sponsor div.container div.transp iframe#transport-map {
+    width: 100%;
+    height: 500px;
+  }
 }
