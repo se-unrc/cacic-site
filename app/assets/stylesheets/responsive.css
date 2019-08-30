@@ -240,6 +240,15 @@
       margin: 15px;
   }
 
+  nav.navbar div.container div.navbar-header {
+    height: 1px;
+  }  
+
+  nav.navbar div.container div.navbar-header button.navbar-toggle {
+    margin: 20px 20px 0 0;
+
+  }
+
   nav.navbar div.container div.navbar-header a img {
     width: auto;
     height: auto;
