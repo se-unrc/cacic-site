@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   get 'static_pages/workshops'
 
   get 'static_pages/school'
+  get 'static_pages/talks'
+
   get 'static_pages/athenaeum'
 
   get 'static_pages/accommodation'
