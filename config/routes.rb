@@ -21,8 +21,6 @@ Rails.application.routes.draw do
   get 'static_pages/accommodation'
   get 'static_pages/transport'
 
-hola
-
   get 'workshops/:slug', to: 'workshops#show'
 
   get 'static_pages/format_paper'
