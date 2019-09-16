@@ -9,6 +9,7 @@ ActiveAdmin.register Registration do
     column :course
     column :dni
     column :code
+    column :created_at
 
     column "" do |resource|
       links = ''.html_safe
@@ -23,6 +24,7 @@ ActiveAdmin.register Registration do
   filter :course
   filter :email
   filter :first_name
+  filter :last_name
   filter :university
   filter :city
   filter :province
