@@ -40,6 +40,14 @@ class StaticPagesController < ApplicationController
       type: "application/pdf")
   end
 
+  def download_accepted_paper
+    send_file(
+      "#{Rails.root}/app/assets/images/ListadoArticulosAceptados.pdf",
+      filename: "ListadoArticulosAceptados.pdf",
+      type: "application/pdf")
+  end
+
+
   def workshops
   end
 
