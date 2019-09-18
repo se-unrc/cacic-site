@@ -47,6 +47,13 @@ class StaticPagesController < ApplicationController
       type: "application/pdf")
   end
 
+  def download_schedule_wis
+    send_file(
+      "#{Rails.root}/app/assets/images/cronogramaWIS.pdf",
+      filename: "cronogramaWIS.pdf",
+      type: "application/pdf")
+  end
+
 
   def workshops
   end
