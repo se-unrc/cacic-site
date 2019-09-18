@@ -51,7 +51,8 @@ class StaticPagesController < ApplicationController
     send_file(
       "#{Rails.root}/app/assets/images/cronogramaWIS.pdf",
       filename: "cronogramaWIS.pdf",
-      type: "application/pdf")
+      type: "application/pdf",
+      disposition: 'inline; filename=cronogramaWIS.pdf')
   end
 
 
