@@ -17,8 +17,9 @@ Rails.application.routes.draw do
 
 
 # workshops download
+  get 'download_schedule/:id', to: 'static_pages#download_schedule', as: 'download_schedule'
   get 'static_pages/download_schedule_wis'
-  get 'static_pages/download_schedule_gobierno_digital'
+  # get 'static_pages/download_schedule_gobierno_digital'
   # get 'static_pages/download_schedule_wasi'
   # get 'static_pages/download_schedule_wpdp'
   # get 'static_pages/download_schedule_wtiae'
