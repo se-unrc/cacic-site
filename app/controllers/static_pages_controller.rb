@@ -49,18 +49,18 @@ class StaticPagesController < ApplicationController
 
   def download_schedule
     file_hash = {
-      'wis' => 'cronogramaWIS.pdf',
-      'gobierno_digital' => 'cronogramaGobiernoDigital.pdf',
-      'wasi' => 'cronogramaWASI.pdf',
-      'warso' => 'cronogramaWARSO.pdf',
-      'wbdmd' => 'cronogramaWBDMD.pdf',
-      'wiss' => 'cronogramaWISS.pdf',
-      'wtiae' => 'cronogramaWTIAE.pdf',
-      'wsi' => 'cronogramaWSI.pdf',
-      'wpdp' => 'cronogramaWPDP.pdf',
-      'wiei' => 'cronogramaWIEI.pdf',
-      'wcgiv' => 'cronogramaWCGIV.pdf',
-      'wpsstr' => 'cronogramaWCGIV.pdf'
+      'wis' => 'CronogramaWIS.pdf',
+      'gobierno_digital' => 'CronogramaGobiernoDigital.pdf',
+      'wasi' => 'CronogramaWASI.pdf',
+      'warso' => 'CronogramaWARSO.pdf',
+      'wbdmd' => 'CronogramaWBDMD.pdf',
+      'wiss' => 'CronogramaWISS.pdf',
+      'wtiae' => 'CronogramaWTIAE.pdf',
+      'wsi' => 'CronogramaWSI.pdf',
+      'wpdp' => 'CronogramaWPDP.pdf',
+      'wiei' => 'CronogramaWIEI.pdf',
+      'wcgiv' => 'CronogramaWCGIV.pdf',
+      'wpsstr' => 'CronogramaWCGIV.pdf'
     }
     filename = file_hash.fetch(params[:id])
     extension = filename.split('.').last
