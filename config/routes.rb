@@ -13,6 +13,23 @@ Rails.application.routes.draw do
   get 'static_pages/download_cpf'
   get 'static_pages/accepted_paper'
   get 'static_pages/download_accepted_paper'
+  get 'static_pages/schedule'
+
+
+# workshops download
+  get 'download_schedule/:id', to: 'static_pages#download_schedule', as: 'download_schedule'
+  get 'static_pages/download_schedule_wis'
+  # get 'static_pages/download_schedule_gobierno_digital'
+  # get 'static_pages/download_schedule_wasi'
+  # get 'static_pages/download_schedule_wpdp'
+  # get 'static_pages/download_schedule_wtiae'
+  # get 'static_pages/download_schedule_computacion_grafica'
+  # get 'static_pages/download_schedule_wbdmb'
+  # get 'static_pages/download_schedule_warso'
+  # get 'static_pages/download_schedule_wiss'
+  # get 'static_pages/download_schedule_wpsstr'
+  # get 'static_pages/download_schedule_wsi'
+  # get 'static_pages/download_schedule_wiei'
 
 
   get 'static_pages/workshops'
