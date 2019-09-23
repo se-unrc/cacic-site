@@ -47,29 +47,25 @@ class StaticPagesController < ApplicationController
       type: "application/pdf")
   end
 
-  def download_schedule_wis
-    send_file(
-      "#{Rails.root}/app/assets/images/cronogramaWIS.pdf",
-      filename: "cronogramaWIS.pdf",
-      type: "application/pdf",
-      disposition: 'inline; filename=cronogramaWIS.pdf')
-  end
+  def download_schedule
+    file_hash = {
+      'wis' => 'cronogramaWIS.pdf',
+      'gobierno_digital' => 'cronogramaGobiernoDigital.pdf',
+      'wasi' => 'cronogramaWASI.xlsx',
+      'warso' => 'cronogramaWARSO.xlsx',
+      'wbdmd' => 'cronogramaWBDMD.xlsx',
+      'wiss' => 'cronogramaWISS.xlsx',
+      'wtiae' => 'cronogramaWTIAE.xlsx',
+    }
+    filename = file_hash.fetch(params[:id])
+    extension = filename.split('.').last
 
-  def download_schedule_gobierno_digital
     send_file(
-      "#{Rails.root}/app/assets/images/cronogramaGobiernoDigital.pdf",
-      filename: "cronogramaGobiernoDigital.pdf",
-      type: "application/pdf",
-      disposition: 'inline; filename=cronogramaGobiernoDigital.pdf')
+      "#{Rails.root}/app/assets/images/#{filename}",
+      filename: filename,
+      type: "application/#{extension}",
+      disposition: "inline; filename=#{filename}")
   end
-
-  # def download_schedule_wasi
-  #   send_file(
-  #     "#{Rails.root}/app/assets/images/cronogramaWASI.pdf",
-  #     filename: "cronogramaWASI.pdf",
-  #     type: "application/pdf",
-  #     disposition: 'inline; filename=cronogramaWASI.pdf')
-  # end
 
   # def download_schedule_wpdp
   #   send_file(
@@ -93,30 +89,6 @@ class StaticPagesController < ApplicationController
   #     filename: "cronogramaComputacionGrafica.pdf",
   #     type: "application/pdf",
   #     disposition: 'inline; filename=cronogramaComputacionGrafica.pdf')
-  # end
-
-  # def download_schedule_wbdmd
-  #   send_file(
-  #     "#{Rails.root}/app/assets/images/cronogramaWBDMD.pdf",
-  #     filename: "cronogramaWBDMD.pdf",
-  #     type: "application/pdf",
-  #     disposition: 'inline; filename=cronogramaWBDMD.pdf')
-  # end
-
-  # def download_schedule_warso
-  #   send_file(
-  #     "#{Rails.root}/app/assets/images/cronogramaWARSO.pdf",
-  #     filename: "cronogramaWARSO.pdf",
-  #     type: "application/pdf",
-  #     disposition: 'inline; filename=cronogramaWARSO.pdf')
-  # end
-
-  # def download_schedule_wiss
-  #   send_file(
-  #     "#{Rails.root}/app/assets/images/cronogramaWISS.pdf",
-  #     filename: "cronogramaWISS.pdf",
-  #     type: "application/pdf",
-  #     disposition: 'inline; filename=cronogramaWISS.pdf')
   # end
 
   # def download_schedule_wpsstr
