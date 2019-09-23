@@ -51,11 +51,16 @@ class StaticPagesController < ApplicationController
     file_hash = {
       'wis' => 'cronogramaWIS.pdf',
       'gobierno_digital' => 'cronogramaGobiernoDigital.pdf',
-      'wasi' => 'cronogramaWASI.xlsx',
-      'warso' => 'cronogramaWARSO.xlsx',
-      'wbdmd' => 'cronogramaWBDMD.xlsx',
-      'wiss' => 'cronogramaWISS.xlsx',
-      'wtiae' => 'cronogramaWTIAE.xlsx',
+      'wasi' => 'cronogramaWASI.pdf',
+      'warso' => 'cronogramaWARSO.pdf',
+      'wbdmd' => 'cronogramaWBDMD.pdf',
+      'wiss' => 'cronogramaWISS.pdf',
+      'wtiae' => 'cronogramaWTIAE.pdf',
+      'wsi' => 'cronogramaWSI.pdf',
+      'wpdp' => 'cronogramaWPDP.pdf',
+      'wiei' => 'cronogramaWIEI.pdf',
+      'wcgiv' => 'cronogramaWCGIV.pdf',
+      'wpsstr' => 'cronogramaWCGIV.pdf'
     }
     filename = file_hash.fetch(params[:id])
     extension = filename.split('.').last
