@@ -10,25 +10,28 @@
 
 <section>
   <form id="regForm" action="https://formspree.io/registracioncacic19@dc.exa.unrc.edu.ar" method="POST"/>
+    
+    <h4 class="warning center">Las inscripciones se encuentran cerradas debido a que están los cupos agotados</h4>
+    
     <div class="registerForm">
       <div class="column">
         <h2>Datos Personales</h2>
 
-        <input type="text" class="form-control" id="last_name" name="registration[last_name]" placeholder="Apellido">
-        <input type="text" class="form-control" id="first_name" name="registration[first_name]" placeholder="Nombres">
-        <input type="text" class="form-control" id="dni" name="registration[dni]" placeholder="DNI">
-        <input type="email" class="form-control" id="email" name="registration[email]" placeholder="Email">
-        <input type="text" class="form-control" id="country" name="registration[country]" placeholder="Pais">
-        <input type="text" class="form-control" id="province" name="registration[province]" placeholder="Provincia">
-        <input type="text" class="form-control" id="city" name="registration[city]" placeholder="Ciudad">
+        <input type="text" class="form-control" id="last_name" name="registration[last_name]" placeholder="Apellido" disabled>
+        <input type="text" class="form-control" id="first_name" name="registration[first_name]" placeholder="Nombres" disabled>
+        <input type="text" class="form-control" id="dni" name="registration[dni]" placeholder="DNI" disabled>
+        <input type="email" class="form-control" id="email" name="registration[email]" placeholder="Email" disabled>
+        <input type="text" class="form-control" id="country" name="registration[country]" placeholder="Pais" disabled>
+        <input type="text" class="form-control" id="province" name="registration[province]" placeholder="Provincia" disabled>
+        <input type="text" class="form-control" id="city" name="registration[city]" placeholder="Ciudad" disabled>
       </div>
 
       <div class="column">
         <h2>Datos de Filiación</h2>
 
-        <input type="text" class="form-control" id="university" name="registration[university]" placeholder="institución">
+        <input type="text" class="form-control" id="university" name="registration[university]" placeholder="institución" disabled>
 
-        <select class="form-control" id="category" name="registration[category]">
+        <select class="form-control" id="category" name="registration[category]" disabled>
           <option>Estudiante de Universidad miembro de la RedUNCI</option>
           <option>Estudiante de otra institución</option>
           <option>Otro</option>
@@ -49,9 +52,8 @@
 
       <div class="column course">
         <h1>Curso</h1>
-
         <label class="form-check-label">
-          <input type="radio" class="form-check-input" name="registration[course]" value="Curso1: Software Testing">
+          <input type="radio" class="form-check-input" name="registration[course]" value="Curso1: Software Testing" disabled>
           Software Testing
         </label>
 
@@ -66,12 +68,9 @@
         </label>
 
         <label>
-          <input type="radio" name="registration[course]" value="Curso4: Lógica para Computación">
+          <input type="radio" name="registration[course]" value="Curso4: Lógica para Computación" disabled>
           Lógica para Computación
         </label>
-
-        <p>Los cursos <i>Construcción de Software Robusto con TDD</i> y <i> Programación Probabilística: Teoría y Práctica</i> se encuentran con sus cupos agotados.</p>
-
       </div>
 
       <div class="bank-account">
@@ -91,12 +90,6 @@
       </div>
 
       <div class="break"></div>
-
-      <div class="button">
-        <button type="submit" id="registerSend" name="registration[registerSend]" class="btn btn-default">
-          Registrarse
-        </button>
-      </div>
     </div>
   </form>
 </section>
