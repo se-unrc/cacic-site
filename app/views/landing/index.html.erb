@@ -2,7 +2,7 @@
   <div class="container">
     <%#= video_tag "output.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: "video" %>
     <div class="col-md-6 col-sm-12 col-xs-12 pull-left">
-      <h2 class="stopfade">Congreso Argentino de Ciencias de la Computación</h2>
+      <h2 class="stopfade"><%= t 'congress_title' %> </h2>
       <p>14 al 18 de Octubre, UNRC</p>
       <ul class="list-inline coundown">
         <!-- content loading via js -->
@@ -23,21 +23,10 @@
     <div class="col-md-6">
       <br />
       <br />
-      <h4>Bienvenido a</h4>
+      <h4><%= t 'welcome' %></h4>
       <h3>CACIC<span>2019</span></h3>
       <br />
-      <p>
-        El XXV Congreso Argentino de Ciencias de la Computación
-        se llevará a cabo por primera vez en la Provincia de Córdoba,
-        durante la segunda semana de Octubre, en la sede de la
-        Facultad de Ciencias Exactas, Físico-Químicas y Naturales de
-        la Universidad Nacional de Río Cuarto, Río Cuarto, Córdoba,
-        Argentina. El CACIC es el evento nacional de Cs. de la
-        Computación de mayor concurrencia y de alcance más
-        federal. Actúa como punto de encuentro de investigadores,
-        docentes, estudiantes de grado/postgrado, y profesionales de
-        la Informática.
-      </p>
+      <p> <%= t 'cacic_history' %> </p>
       <br />
       <p class="small"></p>
       <br />

@@ -1,33 +1,28 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  navbar:
+    about: Authorities
+  accepted_papers: Accepted Papers
+  accomodations: Accomodations
+  athenaeum: Athenaeum
+  Contact: Contact
+  information: Information
+  cacic_history: The XXV Argentinean Conference of Computer Science is going to
+    take place for first time in Cordoba Province, during the second week of
+    October, at headquarters of Facultad de Ciencias Exactas, Físico-Químicas y
+    Naturales of Universidad Nacional de Río Cuarto, Río Cuarto, Córdoba,
+    Argentina. CACIC is the national event with greatest participation and more
+    federal reaching. It acts as a meeting point for researches, teaches,
+    grade/postgrade students and IT practicioners.
+  conference: Conference
+  congress_title: Argentinean Conference of Computer Science
+  paper_format: Paper Format
+  school: School
+  organization_access: Organization Access
+  registration: Registration
+  send_camera_ready: Send Camera Ready
+  speakers: Speakers
+  schedule: Schedule
+  sponsors: Sponsors
+  talks: Talks
+  transportations: Transportations
+  welcome: Welcome to
