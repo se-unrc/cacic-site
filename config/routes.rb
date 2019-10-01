@@ -37,6 +37,8 @@ Rails.application.routes.draw do
 
   get 'static_pages/school'
   get 'static_pages/talks'
+  get 'static_pages/guest_talk'
+  get 'static_pages/panel'
 
   get 'static_pages/athenaeum'
 
