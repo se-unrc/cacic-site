@@ -1,4 +1,5 @@
 <nav class="navbar navbar-default header header-navigation">
+
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -30,21 +31,29 @@
                 Envio de Artículos
               </a>
             </li> -->
-              <li>
+        <!--       <li>
               <a href="http://weblidi.info.unlp.edu.ar/sac_congreso/enviarArticulo.php?idEvento=108" target="_blank">
                 Enviar Camera Ready
               </a>
-            </li>
+            </li> -->
             <li><a href="<%= static_pages_accepted_paper_url %>">Papers Aceptados</a></li>
 
-            <li><a href="<%= static_pages_meeting_url %>">Actividades Plenarias</a></li>
-            <li><a href="<%= static_pages_workshops_url %>">Workshops</a></li>
-            <li><a href="<%= static_pages_athenaeum_url %>">Ateneo</a></li> 
-            <li><a href="<%= static_pages_schedule_url %>">Cronograma</a>
-            <li><a href="<%= static_pages_inscription_url %>">Inscripción</a>
-
-            <li><a href="<%= static_pages_talks_url %>">Charlas de Empresas</a>
+<!--             <li><a href="<%= static_pages_meeting_url %>">Actividades Plenarias</a></li>
+ --> 
+            <li><a>Actividades Plenarias</a>
+              <ul class="sub-menu">
+                <li><a href="<%= static_pages_panel_url %>">Panel</a></li>
+                <li><a href="<%= static_pages_guest_talk_url %>">Charla Invitada</a></li>
+                <li><a href="<%= static_pages_athenaeum_url %>">Ateneo</a></li>
+                <li><a href="<%= static_pages_school_url %>">Escuela</a></li>
+              </ul>
             </li>
+            <li><a href="<%= static_pages_workshops_url %>">Workshops</a></li>
+            <!-- <li><a href="<%= static_pages_athenaeum_url %>">Ateneo</a></li>  -->
+            <li><a href="<%= static_pages_schedule_url %>">Cronograma</a></li>
+            <li><a href="<%= static_pages_inscription_url %>">Inscripción</a></li>
+
+            <li><a href="<%= static_pages_talks_url %>">Charlas de Empresas</a></li>
           </ul>
         </li>
 
