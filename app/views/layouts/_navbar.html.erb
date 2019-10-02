@@ -19,79 +19,55 @@
     <div class="collapse  navbar-collapse" id="main-menu">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="<%= landing_index_url %>">Home</a></li>
-        <li><a href="<%= static_pages_about_url %>">Autoridades</a></li>
+        <li><a href="<%= static_pages_about_url %>"><%= t 'navbar.about' %></a></li>
 
         <li>
-          <a href="#">Congreso</a>
+          <a href="#"><%= t 'conference' %></a>
           <ul class="sub-menu">             
             <li><a href="<%= static_pages_cfp_url %>">Call for Papers</a></li>
-            <li><a href="<%= static_pages_format_paper_url %>">Formato Paper</a></li>
-            <!-- <li>
-              <a href="http://weblidi.info.unlp.edu.ar/sac_congreso/enviarArticulo.php?idEvento=106" target="_blank">
-                Envio de Artículos
-              </a>
-            </li> -->
-        <!--       <li>
-              <a href="http://weblidi.info.unlp.edu.ar/sac_congreso/enviarArticulo.php?idEvento=108" target="_blank">
-                Enviar Camera Ready
-              </a>
-            </li> -->
-            <li><a href="<%= static_pages_accepted_paper_url %>">Papers Aceptados</a></li>
+            <li><a href="<%= static_pages_format_paper_url %>"><%= t 'paper_format' %></a></li>
+            <li><a href="<%= static_pages_accepted_paper_url %>"><%= t 'accepted_papers' %></a></li>
 
-<!--             <li><a href="<%= static_pages_meeting_url %>">Actividades Plenarias</a></li>
- --> 
             <li><a>Actividades Plenarias</a>
               <ul class="sub-menu">
                 <li><a href="<%= static_pages_panel_url %>">Panel</a></li>
                 <li><a href="<%= static_pages_guest_talk_url %>">Charla Invitada</a></li>
-                <li><a href="<%= static_pages_athenaeum_url %>">Ateneo</a></li>
-                <li><a href="<%= static_pages_school_url %>">Escuela</a></li>
+                <li><a href="<%= static_pages_athenaeum_url %>"><%= t 'athenaeum' %></a></li>
+                <li><a href="<%= static_pages_school_url %>"><%= t 'school' %></a></li>
               </ul>
             </li>
+
+            <li><a href="<%= static_pages_speakers_url %>"><%= t 'speakers' %></a></li>
             <li><a href="<%= static_pages_workshops_url %>">Workshops</a></li>
-            <!-- <li><a href="<%= static_pages_athenaeum_url %>">Ateneo</a></li>  -->
-            <li><a href="<%= static_pages_schedule_url %>">Cronograma</a></li>
-            <li><a href="<%= static_pages_inscription_url %>">Inscripción</a></li>
-
-            <li><a href="<%= static_pages_talks_url %>">Charlas de Empresas</a></li>
+            <li><a href="<%= static_pages_schedule_url %>"><%= t 'schedule' %></a>
+            <li><a href="<%= static_pages_inscription_url %>"><%= t 'registration' %></a>
+            <li><a href="<%= static_pages_talks_url %>"><%= t 'talks' %></a>
+            </li>
           </ul>
         </li>
 
         <li>
-          <a href="<%= static_pages_school_url %>">Escuela</a>
+          <a href="<%= static_pages_school_url %>"><%= t 'school' %></a>
         </li>
 
+        <li><a href="<%= static_pages_sponsors_url %>"><%= t 'sponsors' %></a></li>
 
-
-        <!--
-        <li><a href="schedule.html">Schedule</a></li>
-        -->
-
-        <li><a href="<%= static_pages_sponsors_url %>">Auspiciantes</a></li>
-        <!--
         <li>
-          <a href="blog.html">Blog</a>
-          <ul class="sub-menu">             
-            <li><a href="single-blog.html">Blog Details</a></li>
-          </ul>
-        </li>
-        -->
-        <li>
-        <a href="#">Información</a>
+        <a href="#"><%= t 'information' %></a>
         <ul class="sub-menu">     
           <li>
-            <a href="<%= static_pages_accommodation_url %>">Alojamientos</a>
+            <a href="<%= static_pages_accommodation_url %>"><%= t 'accomodations' %></a>
           </li>      
           <li>
-            <a href="<%= static_pages_transport_url %>">Transporte</a>
+            <a href="<%= static_pages_transport_url %>"><%= t 'transportation' %></a>
           </li>                
-          <li><a href="<%= static_pages_contact_url %>">Contacto</a></li>
+          <li><a href="<%= static_pages_contact_url %>"><%= t 'contact' %></a></li>
        </ul>
         <li>
           <a
             href="http://weblidi.info.unlp.edu.ar/sac_congreso/index.php?idEvento=106"
             class="organization">
-            Acceso a la Organización
+            <%= t 'organization_access' %>
           </a>
         </li>
       </ul>
