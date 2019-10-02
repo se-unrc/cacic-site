@@ -1,0 +1,78 @@
+es:
+  navbar:
+    about: Autoridades
+  accepted_papers: Papers aceptados
+  accepted_papers_description: En el siguiente archivo se encuentran los papers
+    que fueron aceptados por los evaluadores.
+  accomodations: Alojamientos
+  athenaeum: Ateneo
+  authorities: Autoridades
+  cacic_history: El XXV Congreso Argentino de Ciencias de la Computación
+    se llevará a cabo por primera vez en la Provincia de Córdoba,
+    durante la segunda semana de Octubre, en la sede de la
+    Facultad de Ciencias Exactas, Físico-Químicas y Naturales de
+    la Universidad Nacional de Río Cuarto, Río Cuarto, Córdoba,
+    Argentina. El CACIC es el evento nacional de Cs. de la
+    Computación de mayor concurrencia y de alcance más
+    federal. Actúa como punto de encuentro de investigadores,
+    docentes, estudiantes de grado/postgrado, y profesionales de
+    la Informática.
+  conference: Congreso
+  contact: Contacto
+  contact_us: Contactenos
+  contact_description: Contactenos por cualquier duda o consulta
+  course: Curso %number
+  course_charge: A cargo de
+  course_description: Cursos de la XXIII Escuela Internacional informática
+  date: 14 al 18 de Octubre
+  footer_the_conference_description: El Congreso cubre diferentes áreas a través
+    de la organización de Workshops, coordinados por expertos en los temas del
+    área. En estos Workshops se presentan trabajos científicos evaluados por
+    investigadores del país y del exterior.
+  gold: Oro
+  english_course: Este curso será dictado en inglés.
+  index_talks: Charlas
+  index_courses: Cursos
+  index_registration:  Para realizar la inscripcion al Congreso, complete el Formulario de Inscripción
+  index_sponsors_desc: Los siguientes son los auspiciantes del evento
+  index_works: Presentación de trabajos
+  information: Información
+  international_school: Escuela Internacional de Informática
+  international_school_desc: Estos son los profesores que estarán disertando en la escuela del congreso
+  paper_format: Formato Paper
+  school: Escuela
+  congress_title: Congreso Argentino de Ciencias de la Computación
+  organize: Organizan
+  organization_access: Acceso a la Organización
+  platinium: Platino
+  registration: Inscripción
+  registrations: Registraciones
+  registration_form: Formulario de Inscripción
+  scholarships: Becas
+  send_camera_ready: Enviar Camera Ready
+  send_message: Enviar Mensaje
+  schedule: Cronograma
+  speakers: Disertantes
+  sponsors: Auspiciantes
+  sponsors_thanks: Agradecemos a los siguientes auspiciantes por su apoyo al evento
+  talks: Charlas de Empresas
+  the_conference: El Congreso
+  the_school: La Escuela
+  the_athenaeum: El Ateneo
+  the_conference_description: El Congreso Argentino de Ciencias de la
+    Computación (CACIC) es organizado por la Red de Universidades Nacionales con
+    carreras en Informática (RedUNCI). CACIC reúne desde 1995 a investigadores,
+    docentes, profesionales y alumnos de grado y postgrado vinculados con la
+    disciplina Informática.
+  the_school_description: La Escuela Internacional de Informática asociada a
+    CACIC brinda cursos intensivos de formación destinados a estudiantes de
+    grado, estudiantes de postgrado, graduados e investigadores, sobre diversas
+    temáticas de interés en Ciencias de la Computación.
+  the_athenaeum_description: El Ateneo de Profesores Universitarios de
+    Computación reúne a docentes y estudiantes del nivel superior, involucrados
+    en la disciplina informática, para discutir, analizar y estudiar enfoques de
+    enseñanza-aprendizaje, aspectos curriculares, y otros temas de interés para
+    la enseñanza de la disciplina.
+  transportation: Transportes
+  welcome: Bienvenido a
+  write_us: Escribanos por cualquier consulta
