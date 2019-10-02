@@ -2,7 +2,7 @@ en:
   navbar:
     about: Authorities
   accepted_papers: Accepted Papers
-  accepted_papers_description: The following file there are listed the accepted papers.
+  accepted_papers_description: Accepted papers list can be found in the following link
   accomodations: Accomodations
   athenaeum: Athenaeum
   authorities: Authorities
@@ -53,7 +53,7 @@ en:
   the_conference: Conference
   the_school: School
   the_athenaeum: Athenaeum
-  the_conference_description: Argentinean Conference of Computer Science (CACIC)
+  the_conference_description: Argentinean Congress of Computer Science (CACIC)
     is organized by the national universitites network with informatic careers
     (RedUNCI). CACIC gather since 1995 researches, teachers, practicioners and
     students linked with computing disciplines
