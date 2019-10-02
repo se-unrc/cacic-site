@@ -1,9 +1,9 @@
 <section class="page-title">
   <div class="container">
-    <h2>Escuela</h2>
+    <h2><%= t 'school' %></h2>
     <ul class="list-inline">
       <li><a href="/">Home</a></li>
-      <li><a href="#"><i class="fa fa-angle-right"></i> Escuela</a></li>
+      <li><a href="#"><i class="fa fa-angle-right"></i> <%= t 'school' %></a></li>
     </ul><!-- /.list-inline -->
   </div><!-- /.container -->
 </section><!-- /.page-title -->
@@ -12,15 +12,15 @@
 <section class="school">
   <div>
     <center>
-      <h2>Cursos de la XXIII Escuela Internacional informática</h2>
+      <h2><%= t 'course_description' %></h2>
     </center>
     <ul class="courses">
       <li>
-        <h3> <bold>Curso 1</bold>: <a href="#" onclick="toggleCourse('curso1'); return false;">Software Testing</a></h3>
-        <h4> A cargo de: <%= link_to 'Marcelo D’Amorim', 'https://www.cin.ufpe.br/~damorim/', target: '_blank' %></h4>
+        <h3> <bold><%= t 'course', number: 1 %></bold>: <a href="#" onclick="toggleCourse('curso1'); return false;">Software Testing</a></h3>
+        <h4> <%= t 'course_charge' %>: <%= link_to 'Marcelo D’Amorim', 'https://www.cin.ufpe.br/~damorim/', target: '_blank' %></h4>
 
         <div id="curso1" class="description">
-          Este curso será dictado en inglés.
+          <%= t 'english_course' %>
           <br><br>
           <strong>Course description</strong> <br>
           Software Testing is an approach to assure software quality that is widely adopted in industry. The goal of this course is to introduce Software Testing to students of various backgrounds. The course will cover concepts at different levels. The first two days of the course will cover basic material (e.g., definitions, coverage adequacy, etc.) to students that have no exposure to the discipline. Then, progressively, the course will cover more advanced concepts (e.g., fuzzing, symbolic execution, bounded model checking) and problems investigated in academic research.
@@ -39,9 +39,9 @@
       </li>
 
       <li>
-        <h3> <bold>Curso 2</bold>: <a href="#" onclick="toggleCourse('curso2'); return false;">Construcción de Software Robusto con TDD</a> </h3>
+        <h3> <bold><%= t 'course', number: 2 %></bold>: <a href="#" onclick="toggleCourse('curso2'); return false;">Construcción de Software Robusto con TDD</a> </h3>
 
-        <h4> A cargo de: <%= link_to 'Hernán Wilkinson', 'https://www-2.dc.uba.ar/staff/hwilkinson/', target: "_blank" %> </h4>
+        <h4> <%= t 'course_charge' %>: <%= link_to 'Hernán Wilkinson', 'https://www-2.dc.uba.ar/staff/hwilkinson/', target: "_blank" %> </h4>
 
         <div id="curso2" class="description">
           <strong>Requisitos del curso</strong> <br>
@@ -71,8 +71,8 @@
       </li>
 
       <li>
-        <h3> <bold>Curso 3</bold>: <a href="#" onclick="toggleCourse('curso3'); return false;">Programación Probabilística: Teoría y Práctica</a></h3>
-        <h4>A cargo de: <%= link_to 'Federico Olmedo', 'https://www.dcc.uchile.cl/federico_olmedo', target: "_blank" %></h4>
+        <h3> <bold><%= t 'course', number: 3 %></bold>: <a href="#" onclick="toggleCourse('curso3'); return false;">Programación Probabilística: Teoría y Práctica</a></h3>
+        <h4><%= t 'course_charge' %>: <%= link_to 'Federico Olmedo', 'https://www.dcc.uchile.cl/federico_olmedo', target: "_blank" %></h4>
 
         <div id="curso3" class="description">
           <strong>Requisitos del curso</strong> <br>
@@ -100,9 +100,9 @@
       </li>
 
       <li>
-        <h3> <bold>Curso 4</bold>: <a href="#" onclick="toggleCourse('curso4'); return false;">
+        <h3> <bold><%= t 'course', number: 4 %></bold>: <a href="#" onclick="toggleCourse('curso4'); return false;">
           Lógica para Computación</a></h3>
-        <h4>A cargo de: <%= link_to 'Marcelo Frias', '#', target: "_blank" %></h4>
+        <h4><%= t 'course_charge' %>: <%= link_to 'Marcelo Frias', '#', target: "_blank" %></h4>
 
         <div id="curso4" class="description">
           <strong>Requisitos del curso</strong> <br>
@@ -170,16 +170,11 @@
     b) Cumplir con los requisitos de asistencia mínima al curso, consistentes en asistir al ochenta por ciento (80%) o mas de las clases dictadas. Por ejemplo, si en un curso se dictaren cinco (5) clases, el Beneficiario deberá asistir a cuatro (4) o mas clases.<br><br>
 
     <strong>Para solicitar una beca o por consultas, escribir a: becascacic19@dc.exa.unrc.edu.ar </strong><br>
-    
-
-
   </div>
 </div><!-- /.sec-title text-center -->
 </ul>
 
 </section>
-
-
 
 <script type="text/javascript">
 function toggleCourse(id) {

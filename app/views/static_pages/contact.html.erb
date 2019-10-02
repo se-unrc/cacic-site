@@ -1,9 +1,9 @@
 <section class="page-title">
   <div class="container">
-    <h2>Contactenos</h2>
+    <h2><%= t 'contact_us' %></h2>
     <ul class="list-inline">
       <li><a href="/">Home</a></li>
-      <li><a href="#"><i class="fa fa-angle-right"></i> Contacto</a></li>
+      <li><a href="#"><i class="fa fa-angle-right"></i> <%= t 'contact' %></a></li>
     </ul><!-- /.list-inline -->
   </div><!-- /.container -->
 </section><!-- /.page-title -->
@@ -11,9 +11,9 @@
 <section class="contact-section sec-pad">
   <div class="container">
     <div class="sec-title text-center">
-      <h5>Contacto</h5>
-      <h2>Contactenos</h2>
-      <p>Escribanos por cualquier consulta</p>
+      <h5><%= t 'contact' %></h5>
+      <h2><%= t 'contact_us' %></h2>
+      <p><%= t 'write_us' %></p>
     </div><!-- /.sec-title text-center -->
     <div class="row">
       <div class="col-md-7">
@@ -22,7 +22,7 @@
           <input type="text" name="apellido" placeholder="Apellido"/>
           <input type="text" name="numero" placeholder="Numero de Telefono"/>
           <textarea name="mensaje" placeholder="Mensaje"></textarea>
-          <button type="submit" class="btn">Enviar Mensaje</button>
+          <button type="submit" class="btn"><%= t 'send_message' %></button>
         </form>
       </div><!-- /.col-md-8 -->
       <div class="col-md-5">
@@ -44,7 +44,7 @@
                 <i class="fa fa-phone"></i>
               </div><!-- /.icon-box -->
               <div class="text-box">
-                <h3>Numero </h3>
+                <h3>Número </h3>
                 <p>[+54] 358 467-6235</p>
               </div><!-- /.text-box -->
             </li>

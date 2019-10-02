@@ -3,7 +3,7 @@
     <%#= video_tag "output.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: "video" %>
     <div class="col-md-6 col-sm-12 col-xs-12 pull-left">
       <h2 class="stopfade"><%= t 'congress_title' %> </h2>
-      <p>14 al 18 de Octubre, UNRC</p>
+      <p> <%= t 'date' %>, UNRC</p>
       <ul class="list-inline coundown">
         <!-- content loading via js -->
       </ul>
@@ -44,11 +44,11 @@
   <div class="container">
     <div class="col-md-3 text-center">
       <%= fa_icon "microphone" %>
-      <p> Charlas </p>
+      <p> <%= t 'index_talks' %> </p>
     </div><!-- /.col-md-3 -->
     <div class="col-md-3 text-center">
       <i class="fa fa-flag"></i>
-      <p>Cursos</p>
+      <p><%= t 'index_courses' %></p>
     </div><!-- /.col-md-3 -->
     <div class="col-md-3 text-center">
       <i class="fa fa-ticket"></i>
@@ -56,7 +56,7 @@
     </div><!-- /.col-md-3 -->
     <div class="col-md-3 text-center">
       <i class="fa fa-calendar"></i>
-      <p>Presentación de trabajos</p>
+      <p><%= t 'index_works' %></p>
     </div><!-- /.col-md-3 -->
   </div><!-- /.container -->
 </section><!-- /.counter-section -->
@@ -66,7 +66,7 @@
     <div class="sec-title text-center">
       <h5>2019</h5>
       <h2>CACIC</h2>
-      <p> XXV Congreso Argentino de Ciencias de la Computación </p>
+      <p> XXV <%= t 'congress_title' %></p>
     </div><!-- /.sec-title text-center -->
     <div class="row">
       <div class="col-md-4">
@@ -78,18 +78,8 @@
             </div><!-- /.date-box -->
           </div><!-- /.img-box -->
           <div class="bottom-box">
-            <h3>El Congreso</h3>
-            <p>El Congreso Argentino de
-              Ciencias de la Computación
-              (CACIC) es organizado por la
-              Red de Universidades
-              Nacionales con carreras en
-              Informática (RedUNCI). CACIC
-              reúne desde 1995 a
-              investigadores, docentes,
-              profesionales y alumnos de
-              grado y postgrado vinculados
-              con la disciplina Informática. </p>
+            <h3><%= t 'the_conference' %></h3>
+            <p><%= t 'the_conference_description' %> </p>
             <ul class="post-meta list-inline text-center">
 
             </ul><!-- /.post-meta -->
@@ -105,17 +95,8 @@
             </div><!-- /.date-box -->
           </div><!-- /.img-box -->
           <div class="bottom-box">
-            <h3>La Escuela</h3>
-            <p>La Escuela Internacional de
-              Informática asociada a CACIC
-              brinda cursos intensivos de
-              formación destinados a
-              estudiantes de grado,
-              estudiantes de postgrado,
-              graduados e investigadores,
-              sobre diversas temáticas de
-              interés en Ciencias de la
-              Computación.</p>
+            <h3><%= t 'the_school' %></h3>
+            <p><%= t 'the_school_description' %></p>
             <ul class="post-meta list-inline text-center">
             </ul><!-- /.post-meta -->
           </div><!-- .bottom-box -->
@@ -130,18 +111,8 @@
             </div><!-- /.date-box -->
           </div><!-- /.img-box -->
           <div class="bottom-box">
-            <h3>El Ateneo</h3>
-            <p>El Ateneo de Profesores
-            Universitarios de Computación
-            reúne a docentes y estudiantes
-            del nivel superior, involucrados
-            en la disciplina informática,
-            para discutir, analizar y
-            estudiar enfoques de
-            enseñanza-aprendizaje,
-            aspectos curriculares, y otros
-            temas de interés para la
-            enseñanza de la disciplina.</p>
+            <h3><%= t 'the_athenaeum' %></h3>
+            <p><%= t 'the_athenaeum_description' %></p>
             <ul class="post-meta list-inline text-center">
             </ul><!-- /.post-meta -->
           </div><!-- /.bottom-box -->
@@ -153,8 +124,15 @@
 
 <section class="call-to-action">
   <div class="container">
-    <h3>Registraciones</h3>
-    <p>Próximamente se abrirán las registraciones</p>
+    <h3><%= t 'registrations' %></h3>
+    <p><%= t 'index_registration' %></p>
+
+    <div class="register-section">
+      <a href="http://weblidi.info.unlp.edu.ar/sac_congreso/inscripcionCongreso.php?idEvento=106" target="_blank" class="btn btn-default register-button" role="button">
+        <%= t 'registration_form' %>
+      </a>
+    </div>
+
     <!-- <a href="#" class="btn">Register Now</a> -->
   </div><!-- /.container -->
 </section><!-- /.call-to-action -->
@@ -163,11 +141,11 @@
   <div class="container">
     <div class="sec-title text-center">
       <h5>CACIC 2019</h5>
-      <h2>Auspiciantes del evento</h2>
-      <p>Los siguientes son los auspiciantes del evento</p>
+      <h2><%= t 'sponsors' %></h2>
+      <p><%= t 'index_sponsors_desc' %></p>
     </div><!-- /.sec-title text-center -->
 
-    <h3 class="sponsor-title text-center">Organizan</h3><!-- /.organization-title -->
+    <h3 class="sponsor-title text-center"><%= t 'organize' %></h3><!-- /.organization-title -->
     <br />
     <ul class="sponsor-img-list list-inline text-center">
       <li>
@@ -178,7 +156,7 @@
         </li>
     </ul>
 
-    <h3 class="sponsor-title text-center">Platino</h3><!-- /.sponsor-title -->
+    <h3 class="sponsor-title text-center"><%= t 'platinium' %></h3><!-- /.sponsor-title -->
     <br />
     <ul class="sponsor-img-list list-inline text-center">
         <li>
@@ -225,7 +203,7 @@
       </ul>
 
     <br /><br /><br />
-    <h3 class="sponsor-title text-center">Oro</h3><!-- /.sponsor-title -->
+    <h3 class="sponsor-title text-center"><%= t 'gold' %></h3><!-- /.sponsor-title -->
     <br />
     <ul class="sponsor-img-list list-inline text-center">
       <li>
