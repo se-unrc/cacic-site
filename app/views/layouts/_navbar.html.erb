@@ -1,5 +1,4 @@
 <nav class="navbar navbar-default header header-navigation">
-
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -67,6 +66,13 @@
             href="http://weblidi.info.unlp.edu.ar/sac_congreso/index.php?idEvento=106"
             class="organization">
             <%= t 'organization_access' %>
+            <div class="flags">
+              <% if @locale == 'en' %>
+                <%= link_to image_tag('es.png', size: '30x30'), root_url(locale: 'es') %>
+              <% else %>
+                <%= link_to image_tag('en.png', size: '30x30'), root_url(locale: 'en') %>
+              <% end -%>
+            </div>
           </a>
         </li>
       </ul>
