@@ -21,7 +21,7 @@ es:
   contact: Contacto
   contact_us: Contactenos
   contact_description: Contactenos por cualquier duda o consulta
-  course: Curso %number
+  course: Curso %{number}
   course_charge: A cargo de
   course_description: Cursos de la XXIII Escuela Internacional informática
   date: 14 al 18 de Octubre
