@@ -9,6 +9,9 @@ en:
   contact: Contact
   contact_us: Contact us
   contact_description: Contact us
+  guest_talks: Guest Talk
+  plenary_activities: PLENARY ACTIVITIES
+
   course: Course %{number}
   course_charge: On charge of
   course_description: Courses of XXIII School of Computing
@@ -69,3 +72,59 @@ en:
   transportations: Transportations
   welcome: Welcome to
   write_us: Write us
+  name_course2: Robust Software Construction with TDD
+  name_course3: >
+    Probabilistic Programming: Theory and Practice
+  name_course4: Logic for Computing
+  course_prerequisites: Course prerequisites
+  course_description: Course 
+  course2_detail: Detailed description of the course (in Spanish)
+  course2_prerequisites: 
+    It's important for attendants to have sufficient knowledge on programming, 
+    knowledge on programming, as this course is hands-on.
+    Acceptable languages are Smalltalk, Java, C#, Python, Ruby, JavaScript and PHP.
+    The software requirements for taking the course (this is for students' own computers) is simply 
+    to have the programming language installed (with a suitable IDE), and a corresponding xUnit framework.
+  course3_prerequisites: While it is recommended that attendants are already familiar with basic 
+    concepts from probability theory and programming languages, this course 
+    will go through all the necessary concepts. It is a self-content course that should 
+    be accessible to any Computer Science student.
+  course4_prerequisites: >
+    Basic knowledge on discrete mathematics and propositional (boolean) logic.
+  course2_description: The aim of this course is to convey the main concepts 
+    of the software development technique known as  Test Driven Development (TDD), 
+    through practical and everyday programming examples. This course starts with a brief 
+    theoretical introduction, and then concentrates in practical programming exercises, 
+    especially designed so that students can master the technique, as we believe that 
+    'the best way to learn is by doing'
+  course3_description:  >
+    In the last few years, probabilistic programming languages (PPLs) have 
+    received increasing attenting, both from academia and industry. To a great extent, this is 
+    due to the way in which these languages have revolutionized artificial intelligence. 
+    For instance, modern PPLs can do in 50 lines of code what previously required over 1000.
+    The main objective of this course is to introduce students to the "world" of PPLs, in a broad manner,
+    covering both practical aspects and foundations. We will start by discussing the benefits and 
+    potential of probabilistic computational models, going through their main applications, 
+    putting special emphasis on the cause of this revolution: artificial intelligence and bayesian 
+    reasoning. The second part of the course will cover the main challenges in the design and 
+    implementation of PPLs. Finally, we will discuss the formal semantics and different 
+    verification techniques for probabilistic programs.
+  course4_description:  >
+    Propositional logic: definitions and limitations. 
+    Predicate logic: definitions and limitations.
+    Relational logic. 
+    Program specification: weakest precondition, partial and total program correctness. 
+    The Java Modeling Language: a language for program specification.  
+    Automated fault localization. 
+    Automated program repair.
+  uni_uba: University of Buenos Aires and 10Pines
+  uni_itba: Buenos Aires Institute of Technology
+  uni_chile: University of Chile
+  uni_brasil: Federal University of Pernambuco
+  uni_lito_conicet: University of Litoral and CONICET
+  to_register: The registration has been closed.
+  to_scholarship: The scholarship application has been closed.
+  academic_committee: ACADEMIC COMMITTEE
+  science_committee: SCIENTIFIC COMITTEE
+  organizer_committee: ORGANIZER COMITTEE
+

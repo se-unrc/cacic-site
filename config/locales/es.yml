@@ -2,7 +2,7 @@ es:
   navbar:
     about: Autoridades
   accepted_papers: Papers aceptados
-  accepted_papers_description: En el siguiente archivo se encuentran los papers
+  accepted_papers_buetion: En el siguiente archivo se encuentran los papers
     que fueron aceptados por los evaluadores.
   accomodations: Alojamientos
   athenaeum: Ateneo
@@ -20,6 +20,8 @@ es:
   conference: Congreso
   contact: Contacto
   contact_us: Contactenos
+  guest_talks: Charla Invitada
+  plenary_activities: ACTIVIDADES PLENARIAS
   contact_description: Contactenos por cualquier duda o consulta
   course: Curso %{number}
   course_charge: A cargo de
@@ -76,3 +78,66 @@ es:
   transportation: Transportes
   welcome: Bienvenido a
   write_us: Escribanos por cualquier consulta
+  name_course2: Construcción de Software Robusto con TDD
+  name_course3: >
+    Programación Probabilística: Teoría y Práctica  
+  name_course4: Lógica para Computación
+  course_prerequisites: Requisitos del Curso
+  course_description: Contenido del Curso
+  course2_detail: Descripción completa del curso
+  course2_prerequisites: 
+    Es importante que se tengan conocimientos de programación ya que es un curso 
+    completamente práctico. 
+    Los lenguajes a usar pueden ser Smalltalk, Java, C#, Python, Ruby, JavaScript y PHP.
+    Los requerimientos de máquina es que tengan el lenguaje instalado con el IDE y 
+    el framework xUnit correspondiente. 
+  course3_prerequisites: 
+    Si bien es recomendable que los asistentes estén familiarizados con conceptos básicos 
+    de teoría de la probabilidad y lenguajes de programación, el curso repasará todas las 
+    nociones necesaria para su desarrollo, siendo autocontenido y accesible a cualquier 
+    estudiante de la disciplina. .
+  course4_prerequisites: >
+    Conocimientos básicos de matemática discreta
+    Conocimientos básicos de lógica booleana 
+  course2_description: El objetivo de este curso es transmitirte la técnica de desarrollo 
+    ágil denominada Test Driven Development (TDD), utilizando para ello ejemplos prácticos y 
+    cotidianos. El curso parte de una breve introducción teórica para luego concentrarse en 
+    ejercicios prácticos especialmente preparados para que aprendas la técnica, puesto que 
+    creemos que 'la mejor manera de aprender es haciendo'.
+  course3_description:  >
+    En los últimos años los lenguajes de programación probabilística (PPLs) han recibido una 
+    enorme atención, tanto desde la academia como desde la industria. En gran medida, esto se 
+    debe a la manera en la que han revolucionado los métodos de la inteligencia artificial. 
+    Por ejemplo, los PPLs actuales pueden hacer en 50 líneas lo que antes llevaba más de 1000.
+    El objetivo de este curso es introducir a sus asistentes al "mundo" de los PPLs, 
+    de una manera amplia, cubriendo tanto aspectos prácticos como de fundamentos. Comenzaremos 
+    estudiando los beneficios y posibilidades de los modelos de cómputo probabilísticos, 
+    recorriendo sus <i>principales aplicaciones</i>, y poniendo especial énfasis en el motor 
+    de esta revolución: la inteligencia artificial y el razonamiento Bayesiano. En la segunda 
+    parte del curso estudiaremos los principales desafíos en el diseño e implementación de los 
+    PPLs. Por último cubriremos la semántica formal y distintas técnicas de verificación de 
+    programas probabilísticos.
+  course4_description:  >
+    Lógica proposicional: definiciones y limitaciones. 
+    Lógica de predicados: definiciones y limitaciones. 
+    Lógica relacional. 
+    Especificación de programas: precondición más débil, corrección parcial y corrección total de programas.
+    Java Modeling Language: un lenguaje para la especificación de programas. 
+    Detección automática de fallas en programas. 
+    Reparación automática de fallas en programas.
+  uni_uba: Universidad de Buenos Aires y 10Pines
+  uni_itba: Instituto Tecnológico de Buenos Aires
+  uni_chile: Universidad de Chile
+  uni_brasil: Universidad Federal de Pernambuco
+  uni_chilecito: Universidad Nacional de Chilecito
+  uni_nordeste: Universidad Nacional del Nordeste
+  uni_lito_conicet: Universidad Nacional del Litoral y CONICET
+  to_register: La registraciones se encuentran cerradas.
+  to_scholarship: El período de solicitud de becas ha finalizado.
+  academic_committee: COMITÉ ACADÉMICO
+  science_committee: COMITÉ CIENTíFICO
+  organizer_committee: COMITÉ ORGANIZADO
+
+
+
+
