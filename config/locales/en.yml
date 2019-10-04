@@ -79,10 +79,12 @@ en:
   course_prerequisites: Course prerequisites
   course_description: Course 
   course2_detail: Detailed description of the course (in Spanish)
-  course2_prerequisites: 
+  course2_prerequisites1: 
     It's important for attendants to have sufficient knowledge on programming, 
     knowledge on programming, as this course is hands-on.
+  course2_prerequisites2: 
     Acceptable languages are Smalltalk, Java, C#, Python, Ruby, JavaScript and PHP.
+  course2_prerequisites3: 
     The software requirements for taking the course (this is for students' own computers) is simply 
     to have the programming language installed (with a suitable IDE), and a corresponding xUnit framework.
   course3_prerequisites: While it is recommended that attendants are already familiar with basic 
@@ -97,11 +99,12 @@ en:
     theoretical introduction, and then concentrates in practical programming exercises, 
     especially designed so that students can master the technique, as we believe that 
     'the best way to learn is by doing'
-  course3_description:  >
+  course3_description1:  >
     In the last few years, probabilistic programming languages (PPLs) have 
     received increasing attenting, both from academia and industry. To a great extent, this is 
     due to the way in which these languages have revolutionized artificial intelligence. 
     For instance, modern PPLs can do in 50 lines of code what previously required over 1000.
+  course3_description2:  >
     The main objective of this course is to introduce students to the "world" of PPLs, in a broad manner,
     covering both practical aspects and foundations. We will start by discussing the benefits and 
     potential of probabilistic computational models, going through their main applications, 
@@ -109,13 +112,19 @@ en:
     reasoning. The second part of the course will cover the main challenges in the design and 
     implementation of PPLs. Finally, we will discuss the formal semantics and different 
     verification techniques for probabilistic programs.
-  course4_description:  >
+  course4_description1:  >
     Propositional logic: definitions and limitations. 
+  course4_description2:  >
     Predicate logic: definitions and limitations.
+  course4_description3:  >
     Relational logic. 
+  course4_description4:  >
     Program specification: weakest precondition, partial and total program correctness. 
+  course4_description5:  >
     The Java Modeling Language: a language for program specification.  
+  course4_description6:  >
     Automated fault localization. 
+  course4_description7:  >
     Automated program repair.
   uni_uba: University of Buenos Aires and 10Pines
   uni_itba: Buenos Aires Institute of Technology

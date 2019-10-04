@@ -85,10 +85,12 @@ es:
   course_prerequisites: Requisitos del Curso
   course_description: Contenido del Curso
   course2_detail: Descripción completa del curso
-  course2_prerequisites: 
+  course2_prerequisites1: 
     Es importante que se tengan conocimientos de programación ya que es un curso 
     completamente práctico. 
+  course2_prerequisites2: 
     Los lenguajes a usar pueden ser Smalltalk, Java, C#, Python, Ruby, JavaScript y PHP.
+  course2_prerequisites3: 
     Los requerimientos de máquina es que tengan el lenguaje instalado con el IDE y 
     el framework xUnit correspondiente. 
   course3_prerequisites: 
@@ -97,33 +99,39 @@ es:
     nociones necesaria para su desarrollo, siendo autocontenido y accesible a cualquier 
     estudiante de la disciplina. .
   course4_prerequisites: >
-    Conocimientos básicos de matemática discreta
-    Conocimientos básicos de lógica booleana 
+    Conocimientos básicos de matemática discreta y de lógica booleana 
   course2_description: El objetivo de este curso es transmitirte la técnica de desarrollo 
     ágil denominada Test Driven Development (TDD), utilizando para ello ejemplos prácticos y 
     cotidianos. El curso parte de una breve introducción teórica para luego concentrarse en 
     ejercicios prácticos especialmente preparados para que aprendas la técnica, puesto que 
     creemos que 'la mejor manera de aprender es haciendo'.
-  course3_description:  >
+  course3_description1:  >
     En los últimos años los lenguajes de programación probabilística (PPLs) han recibido una 
     enorme atención, tanto desde la academia como desde la industria. En gran medida, esto se 
     debe a la manera en la que han revolucionado los métodos de la inteligencia artificial. 
     Por ejemplo, los PPLs actuales pueden hacer en 50 líneas lo que antes llevaba más de 1000.
+  course3_description2:  >
     El objetivo de este curso es introducir a sus asistentes al "mundo" de los PPLs, 
     de una manera amplia, cubriendo tanto aspectos prácticos como de fundamentos. Comenzaremos 
     estudiando los beneficios y posibilidades de los modelos de cómputo probabilísticos, 
-    recorriendo sus <i>principales aplicaciones</i>, y poniendo especial énfasis en el motor 
+    recorriendo sus principales aplicaciones, y poniendo especial énfasis en el motor 
     de esta revolución: la inteligencia artificial y el razonamiento Bayesiano. En la segunda 
     parte del curso estudiaremos los principales desafíos en el diseño e implementación de los 
     PPLs. Por último cubriremos la semántica formal y distintas técnicas de verificación de 
     programas probabilísticos.
-  course4_description:  >
+  course4_description1:  >
     Lógica proposicional: definiciones y limitaciones. 
+  course4_description2:  >
     Lógica de predicados: definiciones y limitaciones. 
+  course4_description3:  >
     Lógica relacional. 
+  course4_description4:  >
     Especificación de programas: precondición más débil, corrección parcial y corrección total de programas.
+  course4_description5:  >
     Java Modeling Language: un lenguaje para la especificación de programas. 
+  course4_description6:  >
     Detección automática de fallas en programas. 
+  course4_description7:  >
     Reparación automática de fallas en programas.
   uni_uba: Universidad de Buenos Aires y 10Pines
   uni_itba: Instituto Tecnológico de Buenos Aires
@@ -136,7 +144,8 @@ es:
   to_scholarship: El período de solicitud de becas ha finalizado.
   academic_committee: COMITÉ ACADÉMICO
   science_committee: COMITÉ CIENTíFICO
-  organizer_committee: COMITÉ ORGANIZADO
+  organizer_committee: "COMITÉ \n ORGANIZADOR"
+  
 
 
 
