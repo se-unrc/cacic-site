@@ -1,6 +1,6 @@
 ActiveAdmin.register Registration do
   permit_params :email, :first_name, :last_name, :dni, :code, :course,
-    :university, :province, :country, :category, :dinner, :scolarship
+    :university, :province, :city, :country, :category, :dinner, :scholarship
 
   index do
     column :email
