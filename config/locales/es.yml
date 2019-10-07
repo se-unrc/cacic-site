@@ -1,4 +1,13 @@
 es:
+  time:
+    formats:
+      default: "%Y/%m/%d"
+      short: "%b %d"
+      long: "%B %d, %Y"
+  devise:
+    failure:
+      admin_user:
+        unauthenticated: No autorizado
   navbar:
     about: Autoridades
   accepted_papers: Papers aceptados
