@@ -9,17 +9,33 @@
 </section><!-- /.page-title -->
 
 
-<section class="speaker-section sec-pad speaker-page">
+<section class="school">
   <div class="container">
     <div class="sec-title text-center">
       <h5>CACIC 2019</h5>
-      <h2>Actividades Plenarias</h2>
+      <h2><%= t 'plenary_activities' %></h2>
       <h3><u>Ateneo</u></h2>
     </div><!-- /.sec-title text-center -->
 
+
     <center>
       <div class="row">
-        <h3>Mara Borchardt, de Fundación Sadosky, disertará en el marco del Ateneo de Profesores Universitarios de Computación </h3>
+        <ul class="courses">
+
+        <li>
+         <h3><a href="#" onclick="toggleCourse('charla2'); return false;">Especializaciones docentes en Ciencias de la Computación: la experiencia de la Iniciativa </a></h3>
+        <h4> A cargo de:  Mara Borchardt. <%= link_to 'Fundación Sadosky', target: '_blank' %>
+       </h4>  
+       <h5> <i class='fas fa-calendar-alt'></i> Jueves 17 de Octubre. 15hs </h5> 
+
+        <div id="charla2" class="description">
+          <strong>Abstract</strong> <br>
+          <justify>
+         En el año 2016, la Iniciativa Program.AR de la Fundación Sadosky diseñó una convocatoria orientada a que Universidades públicas e Institutos de Formación docente se aliaran para diseñar y dictar Especializaciones de formación docente en Didáctica de las Ciencias de la Computación de dos años de duración. Esta fue y sigue siendo la única experiencia en Argentina de formación docente contínua para docentes de todos los niveles educativos en esta materia. En esta charla se presentarán los detalles de la experiencia, resaltando los aprendizajes realizados hasta la fecha por los distintos actores involucrados y las recomendaciones a futuro.
+       </justify>
+        </div>
+      </li>
+    </ul>
         <div class="col-md-12">
           <div class="single-speaker">
             <div class="img-box">
@@ -39,3 +55,9 @@
     </center>
   </div>
 </section>
+
+<script type="text/javascript">
+function toggleCourse(id) {
+  $(`.school ul.courses li div#${id}`).toggle();
+}
+</script>
