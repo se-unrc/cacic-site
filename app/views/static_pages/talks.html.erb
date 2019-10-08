@@ -25,23 +25,6 @@
   </div>
 
 <ul class="courses">
-      <li>
-        <h3> <bold>Charla 1</bold>: <a href="#" onclick="toggleCourse('charla1'); return false;">Contract testing de APIs RESTful</a></h3>
-       
-        <h4> A cargo de: Agustina Aldasoro y Lucas Simonelli. <%= link_to 'Medallia', 'https://www.medallia.com/', target: '_blank' %>
-       </h4>  
-       <h5> <i class='fas fa-calendar-alt'></i> A confirmar..</h5> 
-
-        <div id="charla1" class="description">
-          <strong>Abstract</strong> <br>
-          En Medallia, hoy en día, existen más de 200 REST APIs funcionando. Para que éstas puedan ser utilizadas con éxito, necesitan tener un contrato claro, y garantizar que su implementación lo cumpla. Por lo tanto el proceso de desarrollo de APIs tiene dos componentes fundamentales, una sintáctica y la otra semántica:
-          Al dar forma a una API, se define primero su contrato, usando un subconjunto del Open API spec, un lenguaje de especificación de APIs basado en YAML. A continuación,  nuestras herramientas de desarrollo generan las interfaces necesarias para implementar esta funcionalidad en base al contrato definido. De esta forma, se puede garantizar que la implementación hace lo que la especificación define, y así se garantiza la consistencia sintáctica.
-          Siendo el ecosistema de APIs de Medallia tan diverso, una condición importante es que todas las APIs deben ser semánticamente consistentes entre sí. Esto es, queremos que cada API de Medallia respete ciertos estándares. Para esto, existe el API Spec de Medallia, que es un conjunto de reglas semánticas basado en una especialización de Open API Spec 2.0 que toda API en Medallia debe seguir.
-          Esto último plantea un problema: ¿cómo se puede asegurar que todas las APIs cumplan dichas reglas si éstas últimas muchas veces son sólo explícitas al ver la API en acción?
-          En esta charla vamos a presentar el testing harness que desarrollamos para responder ese interrogante, y cómo éste se integra de forma orgánica con el ecosistema de APIs existente.
-        </div>
-      </li>
-   
   
       <li>
         <h3> <bold>Charla 2</bold>: <a href="#" onclick="toggleCourse('charla2'); return false;">Crystal: Fundamentos, objetivos y desafios</a></h3>
@@ -63,7 +46,7 @@
        </h4>  
        <h5> <i class='fas fa-calendar-alt'></i> Martes 15 de Octubre. 20hs </h5> 
 
-        <div id="charla2" class="description">
+        <div id="charla3 " class="description">
           <strong>Abstract</strong> <br>
      
         </div>
@@ -72,11 +55,11 @@
       <li>
         <h3> <bold>Charla 4</bold>: <a href="#" onclick="toggleCourse('charla4'); return false;">Diseño de microservicios en arquitecturas escalables</a></h3>
        
-        <h4> A cargo de:  Franco Yadon  - Manager expert<%= link_to 'Mercado Libre', 'https://mercadolibre.com.ar', target: '_blank' %>
+        <h4> A cargo de:  Franco Yadon  -  Manager expert. <%= link_to 'Mercado Libre', 'https://mercadolibre.com.ar', target: '_blank' %>
        </h4>  
        <h5> <i class='fas fa-calendar-alt'></i> Miércoles 16 de Octubre. 14hs </h5> 
 
-        <div id="charla2" class="description">
+        <div id="charla4" class="description">
           <strong>Abstract</strong> <br>
           Enfoque desde el punto de vista de Mercadolibre en las tecnologías y lenguajes de backend que utilizamos para construir microservicios. Con qué problemas nos encontramos y cómo los abordamos.
         </div>
@@ -92,6 +75,23 @@
         <div id="charla2" class="description">
           <strong>Abstract</strong> <br>
      
+        </div>
+      </li>
+
+      <li>
+        <h3> <bold>Charla 1</bold>: <a href="#" onclick="toggleCourse('charla1'); return false;">Contract testing de APIs RESTful</a></h3>
+       
+        <h4> A cargo de: Agustina Aldasoro y Lucas Simonelli. <%= link_to 'Medallia', 'https://www.medallia.com/', target: '_blank' %>
+       </h4>  
+       <h5> <i class='fas fa-calendar-alt'></i>Jueves 17 de Octubre. Horario a confirmar</h5> 
+
+        <div id="charla1" class="description">
+          <strong>Abstract</strong> <br>
+          En Medallia, hoy en día, existen más de 200 REST APIs funcionando. Para que éstas puedan ser utilizadas con éxito, necesitan tener un contrato claro, y garantizar que su implementación lo cumpla. Por lo tanto el proceso de desarrollo de APIs tiene dos componentes fundamentales, una sintáctica y la otra semántica:
+          Al dar forma a una API, se define primero su contrato, usando un subconjunto del Open API spec, un lenguaje de especificación de APIs basado en YAML. A continuación,  nuestras herramientas de desarrollo generan las interfaces necesarias para implementar esta funcionalidad en base al contrato definido. De esta forma, se puede garantizar que la implementación hace lo que la especificación define, y así se garantiza la consistencia sintáctica.
+          Siendo el ecosistema de APIs de Medallia tan diverso, una condición importante es que todas las APIs deben ser semánticamente consistentes entre sí. Esto es, queremos que cada API de Medallia respete ciertos estándares. Para esto, existe el API Spec de Medallia, que es un conjunto de reglas semánticas basado en una especialización de Open API Spec 2.0 que toda API en Medallia debe seguir.
+          Esto último plantea un problema: ¿cómo se puede asegurar que todas las APIs cumplan dichas reglas si éstas últimas muchas veces son sólo explícitas al ver la API en acción?
+          En esta charla vamos a presentar el testing harness que desarrollamos para responder ese interrogante, y cómo éste se integra de forma orgánica con el ecosistema de APIs existente.
         </div>
       </li>
 
