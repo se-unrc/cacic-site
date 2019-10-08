@@ -1,4 +1,10 @@
 en:
+  time:
+    am: am
+    formats:
+      default: ! '%a, %d %b %Y %H:%M:%S %z'
+      short: "%b %d"
+      long: "%B %d, %Y"
   navbar:
     about: Authorities
   accepted_papers: Accepted Papers
