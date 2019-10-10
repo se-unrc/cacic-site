@@ -8,10 +8,10 @@
 
 <section class="page-title">
   <div class="container">
-    <h2>Charla de Empresas</h2>
+    <h2><%= t 'talk_sponsors' %></h2>
     <ul class="list-inline">
       <li><a href="/">Home</a></li>
-      <li><a href="#"><i class="fa fa-angle-right"></i> Congreso</a></li>
+      <li><a href="#"><i class="fa fa-angle-right"></i> <%= t 'congress' %></a></li>
     </ul><!-- /.list-inline -->
   </div><!-- /.container -->
 </section><!-- /.page-title -->
@@ -20,18 +20,18 @@
 <section class="school">
   <div>
     <center>
-      <h2>Charlas de Empresas </h2>
+      <h2><%= t 'talk_sponsors' %></h2>
     </center>
   </div>
 
 <ul class="courses">
   
       <li>
-        <h3> <bold>Charla 1</bold>: <a href="#" onclick="toggleCourse('charla2'); return false;">Crystal: Fundamentos, objetivos y desafios</a></h3>
+        <h3> <bold><%= t 'talk1' %></bold>: <a href="#" onclick="toggleCourse('charla2'); return false;">Crystal: Fundamentos, objetivos y desafios</a></h3>
        
-        <h4> A cargo de: Juan Wajnerman y Brian Cardiff. <%= link_to 'Manas', 'https://manas.tech', target: '_blank' %>
+        <h4> <%= t 'course_charge' %>: Juan Wajnerman y Brian Cardiff. <%= link_to 'Manas', 'https://manas.tech', target: '_blank' %>
        </h4>  
-       <h5> <i class='fas fa-calendar-alt'></i> Martes 15 de Octubre. 15hs </h5> 
+       <h5> <i class='fas fa-calendar-alt'></i><%= t 'date2' %></h5> 
 
         <div id="charla2" class="description">
           <strong>Abstract</strong> <br>
@@ -40,11 +40,11 @@
       </li>
 
       <li>
-        <h3> <bold>Charla 2</bold>: <a href="#" onclick="toggleCourse('charla3'); return false;">Machine Learning: segmentación de huesos usando computing vision</a></h3>
+        <h3> <bold><%= t 'talk2' %></bold>: <a href="#" onclick="toggleCourse('charla3'); return false;">Machine Learning: segmentación de huesos usando computing vision</a></h3>
        
-        <h4> A cargo de: Esteban Vaschalde. <%= link_to 'SimTLiX', 'https://www.simtlix.com/en/home/', target: '_blank' %>
+        <h4> <%= t 'course_charge' %>: Esteban Vaschalde. <%= link_to 'SimTLiX', 'https://www.simtlix.com/en/home/', target: '_blank' %>
        </h4>  
-       <h5> <i class='fas fa-calendar-alt'></i> Martes 15 de Octubre. 20hs </h5> 
+       <h5> <i class='fas fa-calendar-alt'></i> <%= t 'date2' %></h5> 
 
         <div id="charla3 " class="description">
           <strong>Abstract</strong> <br>
@@ -53,11 +53,11 @@
       </li>
 
       <li>
-        <h3> <bold>Charla 3</bold>: <a href="#" onclick="toggleCourse('charla4'); return false;">Diseño de microservicios en arquitecturas escalables</a></h3>
+        <h3> <bold><%= t 'talk3' %></bold>: <a href="#" onclick="toggleCourse('charla4'); return false;">Diseño de microservicios en arquitecturas escalables</a></h3>
        
-        <h4> A cargo de:  Franco Yadon  -  Manager expert. <%= link_to 'Mercado Libre', 'https://mercadolibre.com.ar', target: '_blank' %>
+        <h4> <%= t 'course_charge' %>:  Franco Yadon  -  Manager expert. <%= link_to 'Mercado Libre', 'https://mercadolibre.com.ar', target: '_blank' %>
        </h4>  
-       <h5> <i class='fas fa-calendar-alt'></i> Miércoles 16 de Octubre. 14hs </h5> 
+       <h5> <i class='fas fa-calendar-alt'></i><%= t 'date3' %> 14hs </h5> 
 
         <div id="charla4" class="description">
           <strong>Abstract</strong> <br>
@@ -66,24 +66,24 @@
       </li>
 
       <li>
-        <h3> <bold>Charla 4</bold>: <a href="#" onclick="toggleCourse('charla5'); return false;">Empleos 4.0, mucho más que programadores</a></h3>
+        <h3> <bold><%= t 'talk4' %></bold>: <a href="#" onclick="toggleCourse('charla5'); return false;">Empleos 4.0, mucho más que programadores</a></h3>
        
-        <h4> A cargo de: Mauro Busso. Director General de <%= link_to 'CESSI', 'http://www.cessi.org.ar', target: '_blank' %>
+        <h4> <%= t 'course_charge' %>: Mauro Busso. Director General de <%= link_to 'CESSI', 'http://www.cessi.org.ar', target: '_blank' %>
        </h4>  
-       <h5> <i class='fas fa-calendar-alt'></i> Miércoles 16 de Octubre. 15hs </h5> 
+       <h5> <i class='fas fa-calendar-alt'></i><%= t 'date3' %> 15hs </h5> 
 
-        <div id="charla2" class="description">
+        <div id="charla5" class="description">
           <strong>Abstract</strong> <br>
      
         </div>
       </li>
 
       <li>
-        <h3> <bold>Charla 5</bold>: <a href="#" onclick="toggleCourse('charla1'); return false;">Contract testing de APIs RESTful</a></h3>
+        <h3> <bold><%= t 'talk5' %></bold>: <a href="#" onclick="toggleCourse('charla1'); return false;">Contract testing de APIs RESTful</a></h3>
        
-        <h4> A cargo de: Agustina Aldasoro y Lucas Simonelli. <%= link_to 'Medallia', 'https://www.medallia.com/', target: '_blank' %>
+        <h4> <%= t 'course_charge' %>: Agustina Aldasoro y Lucas Simonelli. <%= link_to 'Medallia', 'https://www.medallia.com/', target: '_blank' %>
        </h4>  
-       <h5> <i class='fas fa-calendar-alt'></i>Jueves 17 de Octubre. Horario a confirmar</h5> 
+       <h5> <i class='fas fa-calendar-alt'></i><%= t 'date4' %> 14hs</h5> 
 
         <div id="charla1" class="description">
           <strong>Abstract</strong> <br>

@@ -32,6 +32,8 @@ Rails.application.routes.draw do
     get 'static_pages/transport'
     get 'static_pages/guest_talk'
     get 'static_pages/panel'
+    get 'static_pages/banquet'
+
 
 
     get 'workshops/:slug', to: 'workshops#show'

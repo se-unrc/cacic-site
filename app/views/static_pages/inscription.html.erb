@@ -1,9 +1,9 @@
 <section class="page-title">
   <div class="container">
-    <h2>Incripciones y Aranceles</h2>
+    <h2><%= t 'registration_fees' %></h2>
     <ul class="list-inline">
       <li><a href="/">Home</a></li>
-      <li><a href="#"><i class="fa fa-angle-right"></i>Congreso</a></li>
+      <li><a href="#"><i class="fa fa-angle-right"></i><%= t 'conference' %></a></li>
     </ul><!-- /.list-inline -->
   </div><!-- /.container -->
 </section><!-- /.page-title -->
@@ -35,34 +35,35 @@ tr:nth-child(even) {
 </style>
 
 
-<h3>Aranceles</h3>
+<h3>    <%= t 'fees' %>
+</h3>
 
 <center>
 <table>
   <tr>
-    <th><h5><center>Categoría</center></h5></th>
-    <th><h5>Hasta el 30/9</h5></th>
-    <th><h5>Desde el 01/10</h5></th>
+    <th><h5><center><%= t 'category' %></center></h5></th>
+    <th><h5><%= t 'until1' %></h5></th>
+    <th><h5><%= t 'until2' %></h5></th>
   </tr>
   <tr>
-    <td><center>Alumnos de Universidades Miembro de RedUNCI </center></td>
-    <td>400</td>
-    <td>500</td>
+    <td><center> <%= t 'member_student' %></center></td>
+    <td>400 ARS</td>
+    <td>500 ARS</td>
   </tr>
   <tr>
-    <td><center>Docentes de Universidades Miembro de RedUNCI </center></td>
-    <td>1100</td>
-    <td>1400</td>
+    <td><center> <%= t 'member_teacher' %> </center></td>
+    <td>1100 ARS</td>
+    <td>1400 ARS</td>
   </tr>
   <tr>
-    <td><center>Alumnos de otras instituciones educativas</center> </td>
-    <td>500</td>
-    <td>600</td>
+    <td><center><%= t 'other_student' %></center> </td>
+    <td>500 ARS</td>
+    <td>600 ARS</td>
   </tr>
   <tr>
-    <td><center>Docentes/profesionales de otras instituciones</center></td>
-    <td>1500</td>
-    <td>1800</td>
+    <td><center><%= t 'other_teacher' %></center> </td>
+    <td>1500 ARS</td>
+    <td>1800 ARS</td>
   </tr>
 
 </table>
@@ -71,14 +72,15 @@ tr:nth-child(even) {
 <br>
 <br>
 
-<h3> Incripciones </h3>
+<h3> <%= t 'registration' %></h3>
 <div align="left">   
-    <strong>En todos los casos para que un artículo aceptado figure en los Proceedings de CACIC 2019 que se publicarán en el repositorio digital SEDICI, deberá registrarse la inscripción de al menos UN autor. </strong>
+    <strong> <%= t 'registration_info' %> </strong>
 
     <br>
     <br>
-    Para realizar la inscripcion al Congreso, complete el
-     <a href="http://weblidi.info.unlp.edu.ar/sac_congreso/inscripcionCongreso.php?idEvento=106" target="_blank"> <strong><font size="3"> Formulario de Inscripción </strong></font></a> 
+    <%= t 'registration_done' %>
+     <a href="http://weblidi.info.unlp.edu.ar/sac_congreso/inscripcionCongreso.php?idEvento=106" target="_blank"> <strong><font size="3"> <%= t 'registration_form' %>
+ </strong></font></a> 
         </div>
   </p>
   </div><!-- /.sec-title text-center -->

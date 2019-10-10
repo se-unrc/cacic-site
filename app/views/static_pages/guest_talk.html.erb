@@ -1,9 +1,17 @@
+<html>
+<head>
+<title>Font Awesome 5 Icons</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<!--Get your own code at fontawesome.com-->
+</head>
+
 <section class="page-title">
   <div class="container">
-    <h2>Charla Invitada</h2>
+    <h2><%= t 'guest_talk' %></h2>
     <ul class="list-inline">
       <li><a href="/">Home</a></li>
-      <li><a href="#"><i class="fa fa-angle-right"></i> Actividades Plenarias</a></li>
+      <li><a href="#"><i class="fa fa-angle-right"></i> <%= t 'plenary_activities' %></a></li>
     </ul><!-- /.list-inline -->
   </div><!-- /.container -->
 </section><!-- /.page-title -->
@@ -15,6 +23,8 @@
       <h2><%= t 'plenary_activities' %></h2>
       <h3><u> <%= t 'guest_talk' %></u></h3>
       <h3>“Redes neuronales: orígenes y fundamentos del aprendizaje profundo”</h3>
+      <h5> <i class='fas fa-calendar-alt'></i> <%= t 'date2' %>. 12.30hs </h5> 
+
     </div><!-- /.sec-title text-center -->
 
     <center>

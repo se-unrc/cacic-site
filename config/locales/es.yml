@@ -30,12 +30,22 @@ es:
   contact: Contacto
   contact_us: Contactenos
   guest_talks: Charla Invitada
-  plenary_activities: ACTIVIDADES PLENARIAS
+  plenary_activities: Actividades Plenarias
   contact_description: Contactenos por cualquier duda o consulta
   course: Curso %{number}
   course_charge: A cargo de
   course_description: Cursos de la XXIII Escuela Internacional informática
   date: 14 al 18 de Octubre
+  date1:
+    Lunes 14 de Octubre 
+  date2:
+    Martes 15 de Octubre 
+  date3:
+    Miércoles 16 de Octubre 
+  date4:
+    Jueves 17 de Octubre 
+  date5:
+    Viernes 18 de Octubre 
   footer_the_conference_description: El Congreso cubre diferentes áreas a través
     de la organización de Workshops, coordinados por expertos en los temas del
     área. En estos Workshops se presentan trabajos científicos evaluados por
@@ -59,6 +69,8 @@ es:
   registration: Inscripción
   registrations: Registraciones
   registration_form: Formulario
+  form: Formulario
+
   scholarships: Becas
   send_camera_ready: Enviar Camera Ready
   send_message: Enviar Mensaje
@@ -142,7 +154,8 @@ es:
     Detección automática de fallas en programas. 
   course4_description7:  >
     Reparación automática de fallas en programas.
-  uni_uba: Universidad de Buenos Aires y 10Pines
+  uni_uba_pines: Universidad de Buenos Aires y 10Pines
+  uni_uba: Universidad de Buenos Aires
   uni_itba: Instituto Tecnológico de Buenos Aires
   uni_chile: Universidad de Chile
   uni_brasil: Universidad Federal de Pernambuco
@@ -154,8 +167,42 @@ es:
   academic_committee: COMITÉ ACADÉMICO
   science_committee: COMITÉ CIENTíFICO
   organizer_committee: "COMITÉ \n ORGANIZADOR"
+  abstract_athenaeum: En el año 2016, la Iniciativa Program.AR de la Fundación Sadosky diseñó una convocatoria orientada a que Universidades públicas e Institutos de Formación docente se aliaran para diseñar y dictar Especializaciones de formación docente en Didáctica de las Ciencias de la Computación de dos años de duración. Esta fue y sigue siendo la única experiencia en Argentina de formación docente contínua para docentes de todos los niveles educativos en esta materia. En esta charla se presentarán los detalles de la experiencia, resaltando los aprendizajes realizados hasta la fecha por los distintos actores involucrados y las recomendaciones a futuro.
   
+  title_athenaeum: >
+    Especializaciones docentes en Ciencias de la Computación: 
+    la experiencia de la Iniciativa
+  athenaeum: Ateneo
+  workshops_schedule: Cronograma de presentación de trabajos
+  registration_fees: Incripciones y Aranceles
+  registration_info: En todos los casos para que un artículo aceptado figure en los Proceedings de CACIC 2019 que se publicarán en el repositorio digital SEDICI, deberá registrarse la inscripción de al menos UN autor.
+  registration_done: Para realizar la inscripcion al Congreso, complete el
+  fees: Aránceles
+  category: Categoría
+  until1: Hasta el 30/9
+  until2: Hasta el 30/9
+  member_student: Alumnos de Universidades Miembro de RedUNCI
+  member_teacher: Docentes de Universidades Miembro de RedUNCI
+  other_student: Alumnos de otras instituciones educativas
+  other_teahcer: Docentes/profesionales de otras 
+  talk_sponsors: Charlas
+  talk1: Charla 1
+  talk2: Charla 2
+  talk3: Charla 3
+  talk4: Charla 4
+  talk5: Charla 5
+  acco_info: CACIC 2019 no se encarga de las reservas de alojamiento a hoteles. Para acceder a los precio que se mencionan a continuacion, en todos los casos debe mencionar que asisten a CACIC. Debido a la limitada capacidad hotelera de la ciudad, se sugiere realizar las reservas con anticipación.
+  transport_info: >
+    El campus universario de Rio Cuarto se encuentra a 7km de distancia del centro de la Ciudad. Para llegar existen empresas de taxis y remises que pueden realizar este tramo (desconocemos los precios).
+    Ademas, se cuenta con un servicio de colectivos locales los cuales cubren este trayecto. El transporte local (SATCRC) tiene un sistema propio de tarjeta (SATBUS) con un costo de $80 y el costo de cada viaje es de $22. Puede observar los lugares donde puede adquirir la tarjeta en el siguiente mapa:
 
-
-
-
+  site: sitio
+  routes_line: Para conocer los recorridos de la lineas puede acceder a este
+  schedule_transport: Los horarios y más información sobre los colectivos puede visitar el sitio de la empresa
+  schedule_duration: La duración de las charlas serán de 15 minutos más 5 minutos de preguntas.
+  dinner: Cena de Camadería
+  dinner_info: >
+    Como parte de CACIC 2019, le ofrecemos un momento relajado para socializar con los participantes de diferentes universidades a través de una Cena de Camadería, que tendrá lugar el martes 15 de octubre a las 9 p.m.
+    La cena tiene un costo de $ 700, que debe pagarse en efectivo cuando se acredita en el Congreso.
+    Para participar en la Cena de Camaradería, debe completar el
+  dinner_info1: antes del sábado 10/12/2019.

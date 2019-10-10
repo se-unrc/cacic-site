@@ -16,12 +16,22 @@ en:
   contact_us: Contact us
   contact_description: Contact us
   guest_talks: Guest Talk
-  plenary_activities: PLENARY ACTIVITIES
+  plenary_activities: Plenary Activities
 
   course: Course %{number}
   course_charge: On charge of
   course_description: Courses of XXIII School of Computing
   date: October 14 to 18
+  date1:
+    Monday, 14 October 
+  date2:
+    Tuesday, 15 October 
+  date3:
+    Wednesday, 16 October    
+  date4:
+    Thursday, 14 October 
+  date5:
+    Friday, 14 October 
   footer_the_conference_description: The congress cover several areas through
     workshops, coordinate by experts. In these Workshops there are preented
     scientific works evaluated by foreign and local researchers.
@@ -132,7 +142,10 @@ en:
     Automated fault localization. 
   course4_description7:  >
     Automated program repair.
-  uni_uba: University of Buenos Aires and 10Pines
+  uni_uba_pines: University of Buenos Aires and 10Pines
+  uni_uba: University of Buenos Aires
+  uni_chilecito:  University of Chilecito
+  uni_nordeste:  University of Nordeste
   uni_itba: Buenos Aires Institute of Technology
   uni_chile: University of Chile
   uni_brasil: Federal University of Pernambuco
@@ -142,4 +155,44 @@ en:
   academic_committee: ACADEMIC COMMITTEE
   science_committee: SCIENTIFIC COMITTEE
   organizer_committee: ORGANIZER COMITTEE
+  abstract_athenaeum: En el año 2016, la Iniciativa Program.AR de la Fundación Sadosky diseñó una convocatoria orientada a que Universidades públicas e Institutos de Formación docente se aliaran para diseñar y dictar Especializaciones de formación docente en Didáctica de las Ciencias de la Computación de dos años de duración. Esta fue y sigue siendo la única experiencia en Argentina de formación docente contínua para docentes de todos los niveles educativos en esta materia. En esta charla se presentarán los detalles de la experiencia, resaltando los aprendizajes realizados hasta la fecha por los distintos actores involucrados y las recomendaciones a futuro.
+  title_athenaeum: >
+    Especializaciones docentes en Ciencias de la Computación: 
+    la experiencia de la Iniciativa
+  athenaeum: Athenaeum
+  workshops_schedule: Work presentation schedule
+  registration_fees: Registration and Fees
+  registration_info: For an accepted article to appear in the Proceedings of CACIC 2019 that will be published in the SEDICI digital repository,  at least ONE author must be registered.
+  registration_done: To register for Congress, complete the
+  fees: Fees
+  category: Category
+  until1: Until 30/9
+  until2: Until el 30/9
+  member_student: Students from Universities Member of RedUNCI
+  member_teacher: Teacher from Universities Member of RedUNCI
+  other_student: Students from other educational institutions
+  other_teahcer: Teachers / professionals from other institutions
+  talk_sponsors: Talks
+  talk1: Talk 1
+  talk2: Talk 2
+  talk3: Talk 3
+  talk4: Talk 4
+  talk5: Talk 5
+  acco_info: CACIC 2019 is not responsible for hotel reservations. To access the prices mentioned below, you must mention that you attend to CACIC. Due to the city's limited hotel capacity, it is recommended to book with anticipation.
+  transport_info: >
+    The University of Rio Cuarto is 7 km away from the city center. To arrive there are taxi  and remises companies that can carry out this section (we don't know the prices). In addition, there is a local bus service which covers this route. Local transportation company (SATCRC) has its own card system (SATBUS) with a cost of $ 80 and the cost of each trip is $ 22. You can see the places where you can buy the card on the following map:
+
+  site: site
+  routes_line: To know the routes of the lines, you can access this
+  schedule_transport: Schedules and more information about buses, you can visit the company's website.
+  schedule_duration: The duration of the talks will be 15 minutes and 5 minutes of questions.
+  dinner: Banquet
+  dinner_info: >
+    As part of CACIC 2019, we offer you a relaxed moment to socialize with participants from different Universities through a banquet, which will take place on Tuesday, October 15 at 9 p.m.
+    The dinner has a cost of $ 700, which must be paid in cash when accredited in Conference.
+    To participate in the Banquet you must complete the 
+  dinner_info1: before Saturday 10/12/2019.
+
+  form: Form
+
 

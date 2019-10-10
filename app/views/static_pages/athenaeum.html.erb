@@ -1,38 +1,40 @@
+
 <section class="page-title">
   <div class="container">
-    <h2>Ateneo</h2>
+    <h2><%= t 'athenaeum' %></h2>
     <ul class="list-inline">
       <li><a href="/">Home</a></li>
-      <li><a href="#"><i class="fa fa-angle-right"></i> Ateneo</a></li>
+      <li><a href="#"><i class="fa fa-angle-right"></i> <%= t 'athenaeum' %></a></li>
     </ul><!-- /.list-inline -->
   </div><!-- /.container -->
 </section><!-- /.page-title -->
 
 
-<section class="school">
+<section class="speaker-section sec-pad speaker-page">
   <div class="container">
     <div class="sec-title text-center">
       <h5>CACIC 2019</h5>
       <h2><%= t 'plenary_activities' %></h2>
-      <h3><u>Ateneo</u></h2>
+      <h3><u><%= t 'athenaeum' %></u></h3>
     </div><!-- /.sec-title text-center -->
-
+  </div>
+</section>
+<section class="school">
 
     <center>
       <div class="row">
         <ul class="courses">
-
-        <li>
-         <h3><a href="#" onclick="toggleCourse('charla2'); return false;">Especializaciones docentes en Ciencias de la Computación: la experiencia de la Iniciativa </a></h3>
-        <h4> A cargo de:  Mara Borchardt. <%= link_to 'Fundación Sadosky', target: '_blank' %>
+          <li>
+         <h3><a href="#" onclick="toggleCourse('charla2'); return false;"><%= t 'title_athenaeum' %> </a></h3>
+        <h4>  <%= t 'course_charge' %>:  Mara Borchardt. <%= link_to 'Fundación Sadosky', target: '_blank' %>
        </h4>  
-       <h5> <i class='fas fa-calendar-alt'></i> Jueves 17 de Octubre. 15hs </h5> 
+       <h5> <i class='fas fa-calendar-alt'></i> <%= t 'date4' %>. 15hs </h5> 
 
         <div id="charla2" class="description">
           <strong>Abstract</strong> <br>
           <justify>
-         En el año 2016, la Iniciativa Program.AR de la Fundación Sadosky diseñó una convocatoria orientada a que Universidades públicas e Institutos de Formación docente se aliaran para diseñar y dictar Especializaciones de formación docente en Didáctica de las Ciencias de la Computación de dos años de duración. Esta fue y sigue siendo la única experiencia en Argentina de formación docente contínua para docentes de todos los niveles educativos en esta materia. En esta charla se presentarán los detalles de la experiencia, resaltando los aprendizajes realizados hasta la fecha por los distintos actores involucrados y las recomendaciones a futuro.
-       </justify>
+               <%= t 'abstract_athenaeum' %>
+          </justify>
         </div>
       </li>
     </ul>
