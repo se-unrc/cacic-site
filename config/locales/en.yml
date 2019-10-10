@@ -20,7 +20,7 @@ en:
 
   course: Course %{number}
   course_charge: On charge of
-  course_description: Courses of XXIII School of Computing
+  course_title: Courses of XXIII School of Computing
   date: October 14 to 18
   date1:
     Monday, 14 October 
