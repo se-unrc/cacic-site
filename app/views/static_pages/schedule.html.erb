@@ -27,120 +27,90 @@
       <h3><%= t 'workshops_schedule' %></h3>
     </div>
     <p> <%= t 'schedule_duration' %></p>
+    <p> <%= t 'break_duration' %></p>
+
   </center>
 
    <ul class="workshops">
 
       <li>
-        <h4> <a href="#" onclick="toggleCourse('schedule1'); return false;">Workshop Ingeniería de Software (WIS)</a></h4>
+        <div>
+          <h4><%= link_to 'Workshop Ingeniería de Software (WIS)', download_schedule_url(id: 'wis'), target: :_blank %></h4>
+        </div>        
         <h5> <%= fa_icon "map-marker" %> Aula 113 Pab. 2 (Sala Posgrado. Facultad de Exactas)</h5>
-        <div id="schedule1" class="description">
-         <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FArgentina%2FBuenos_Aires&amp;showNav=0&amp;showDate=0&amp;showPrint=1&amp;showTabs=0&amp;showCalendars=0&amp;showTz=1&amp;showTitle=0&amp;mode=AGENDA&amp;src=OWtyMW50bHJ0MDhxbGtvZWhsanFzNXBrYmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23E67C73" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-          </div>
       </li>
 
       <li>
-        <h4> <a href="#" onclick="toggleCourse('schedule2'); return false;">Track "Gobierno Digital y Ciudades Inteligentes"</a></h4>
+        <div>
+          <h4><%= link_to '"Track "Gobierno Digital y Ciudades Inteligentes', download_schedule_url(id: 'gobierno_digital'), target: :_blank %></h4>
+        </div>    
         <h5> <%= fa_icon "map-marker" %> Aula 110 Pab. 2</h5> 
-
-        <div id="schedule2" class="description">
-         <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;showDate=0&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FArgentina%2FBuenos_Aires&amp;src=dW90dmdya3R2dWQ2YzNrM2RoNDczMXJka2dAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%237CB342&amp;showTitle=0&amp;showNav=0&amp;showPrint=1&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-          </div>
       </li>
       <li>
-        <h4> <a href="#" onclick="toggleCourse('schedule3'); return false;">Workshop agentes y sistemas inteligentes (WASI)</a></h4>
+        <div>
+           <h4><%= link_to 'Workshop agentes y sistemas inteligentes (WASI)', download_schedule_url(id: 'wasi'), target: :_blank %></h4>
+        </div>    
+
         <h5> <%= fa_icon "map-marker" %> Aula 102 Pab. 2 (Sala 102)</h5> 
-
-        <div id="schedule3" class="description">
-         <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;showDate=0&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FArgentina%2FBuenos_Aires&amp;src=czRoamkybDlkZDVyYWdwcnFiYmlnMWQwMDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%237986CB&amp;showTitle=0&amp;showNav=0&amp;showPrint=1&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-          </div>
       </li>
       <li>
-        <h4> <a href="#" onclick="toggleCourse('schedule4'); return false;">Workshop arquitectura, redes y sistemas operativos (WARSO)</a></h4>
-        <h5> <%= fa_icon "map-marker" %> Aula 103 Pab. 2 (Sala 103)</h5> 
+           <h4><%= link_to 'Workshop arquitectura, redes y sistemas operativos (WARSO)', download_schedule_url(id: 'warso'), target: :_blank %></h4>
+          </div>
+          <h5> <%= fa_icon "map-marker" %> Aula 103 Pab. 2 (Sala 103)</h5> 
+      </li>
 
-        <div id="schedule4" class="description">
-         <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;showDate=0&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FArgentina%2FBuenos_Aires&amp;showTitle=0&amp;showNav=0&amp;showPrint=1&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;src=M3Rqa29ocmk1dDRoODc4c2dmOGI5djZqM2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%237986CB" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      <li>
+        <div>
+          <h4><%= link_to 'Workshop Bases de Datos y Minería de Datos (WBDMD)', download_schedule_url(id: 'wbdmd'), target: :_blank %></h4>
         </div>
-      </li>
-
-      <li>
-        <h4> <a href="#" onclick="toggleCourse('schedule5'); return false;">Workshop Bases de Datos y Minería de Datos (WBDMD)</a></h4>
         <h5> <%= fa_icon "map-marker" %> Aula 101 Pab. 2 (Sala 101)</h5> 
-        <div id="schedule5" class="description">
-         <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;showDate=0&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FArgentina%2FBuenos_Aires&amp;showTitle=0&amp;showNav=0&amp;showPrint=1&amp;showTabs=0&amp;showCalendars=0&amp;showDate=0&amp;mode=AGENDA&amp;src=M2dpZmdxa3M5ZmdpaGJtcGtuamFjMGw2bnNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23AD1457" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-          </div>
       </li>
 
       <li>
-        <h4> <a href="#" onclick="toggleCourse('schedule6'); return false;">Workshop Innovación en Sistemas de Software (WISS)</a></h4>
+       <h4><%= link_to 'Workshop Innovación en Sistemas de Software (WISS)', download_schedule_url(id: 'wiss'), target: :_blank %></h4>
         <h5> <%= fa_icon "map-marker" %> Aula 103 Pab. 2 (Sala 103)</h5> 
-
-        <div id="schedule6" class="description">
-         <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;showDate=0&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FArgentina%2FBuenos_Aires&amp;showTitle=0&amp;showNav=0&amp;showPrint=1&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;src=ZGMuZXhhLnVucmMuZWR1LmFyX2tvYThzYm41aHQwNHMzMGZxcDhyMGljdWdzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%233F51B5" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-          </div>
       </li>
       
       <li>
-        <h4> <a href="#" onclick="toggleCourse('schedule7'); return false;">Workshop tecnología informática aplicada en educación (WTIAE)</a></h4>
-        <h5> <%= fa_icon "map-marker" %> Aula 114 Pab. 2 (Centro IRC)</h5> 
-
-        <div id="schedule7" class="description">
-       <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;showDate=0&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FArgentina%2FBuenos_Aires&amp;src=bW5qZ21vc2RtcGdocWQ2cmwyMGdoajFsYm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23F6BF26&amp;showTitle=0&amp;showNav=0&amp;showPrint=1&amp;showTabs=0&amp;showCalendars=0&amp;showDate=0&amp;mode=AGENDA" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-          </div>
+        <h4><%= link_to 'Workshop tecnología informática aplicada en educación (WTIAE)', download_schedule_url(id: 'wtiae'), target: :_blank %></h4>
+        <h5> <%= fa_icon "map-marker" %> Aula 114 Pab. 2 (Centro IRC)</h5>         
       </li>
 
       <li>
-        <h4> <a href="#" onclick="toggleCourse('schedule8'); return false;">Workshop Procesamiento de Señales y Sistemas de Tiempo Real (WPSSTR)</a></h4>
+        <h4><%= link_to 'Workshop Seguridad Informática (WSI)', download_schedule_url(id: 'wsi'), target: :_blank %></h4>
         <h5> <%= fa_icon "map-marker" %> Aula 102 Pab. 2 (Sala 102)</h5> 
-
-        <div id="schedule8" class="description">
-         <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;showDate=0&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FArgentina%2FBuenos_Aires&amp;showTitle=0&amp;showNav=0&amp;showPrint=1&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;src=bjViYWttc2dtbHIzdm1scm9xOXNmYzVxcjhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23EF6C00" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-          </div>
       </li>
 
       <li>
-        <h4> <a href="#" onclick="toggleCourse('schedule9'); return false;">Workshop Seguridad Informática (WSI)</a></h4>
+         <h4><%= link_to 'Workshop Procesamiento de Señales y Sistemas de Tiempo Real (WPSSTR)', download_schedule_url(id: 'wpsstr'), target: :_blank %></h4>
         <h5> <%= fa_icon "map-marker" %> Aula 107 Pab. 3</h5> 
-
-        <div id="schedule9" class="description">
-          <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;showDate=0&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FArgentina%2FBuenos_Aires&amp;showTitle=0&amp;showNav=0&amp;showPrint=1&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;src=Z210cWtma21hNGg1dWNpajgyMTlidGYwZzRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%234285F4" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-          </div>
       </li>
 
       <li>
-        <h4> <a href="#" onclick="toggleCourse('schedule10'); return false;">Workshop Procesamiento Distribuido y Paralelo (WPDP)</a></h4>
+        <h4><%= link_to 'Workshop Procesamiento Distribuido y Paralelo (WPDP)', download_schedule_url(id: 'wpdp'), target: :_blank %></h4>
         <h5> <%= fa_icon "map-marker" %> Aula 10 Pab. 4</h5> 
- 
-        <div id="schedule10" class="description">
-         <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;showDate=0&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FArgentina%2FBuenos_Aires&amp;showTitle=0&amp;showNav=0&amp;showPrint=1&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;src=OTV1dXBwaHVlZGQxam5oYWkwdjBhYWptZGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23009688" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-          </div>
+          
+
       </li>
 
       <li>
-        <h4> <a href="#" onclick="toggleCourse('schedule11'); return false;">Workshop Innovación en Educación en Informática (WIEI)</a></h4>
+        <h4><%= link_to 'Workshop Innovación en Educación en Informática (WIEI)', download_schedule_url(id: 'wiei'), target: :_blank %></h4>
         <h5> <%= fa_icon "map-marker" %> Aula 101 Pab. 2 (Sala 101)</h5> 
-      
-      <div id="schedule11" class="description">
-
-        <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;showDate=0&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FArgentina%2FBuenos_Aires&amp;showTitle=0&amp;showNav=0&amp;showPrint=1&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;src=b2wzamVrMm83YmpvOTNrc2dhanVhdGRmaHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23009688" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        
       </li>
 
       <li>
-        <h4> <a href="#" onclick="toggleCourse('schedule12'); return false;">Workshop Computación Gráfica, Imágenes y Visualización (WCGIV)</a></h4>
+        <h4><%= link_to 'Workshop Computación Gráfica, Imágenes y Visualización (WCGIV)', download_schedule_url(id: 'wpsstr'), target: :_blank %></h4>
         <h5> <%= fa_icon "map-marker" %> Aula 102 Pab. 2 (Sala 102)</h5> 
-      
-      <div id="schedule12" class="description">
-
-        <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;showDate=0&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FArgentina%2FBuenos_Aires&amp;showTitle=0&amp;showNav=0&amp;showPrint=1&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;src=Y2sxZG4xM2MzMGMxZ2Q0dmEydXNkZXNrcm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23F09300" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-      </div>
-      </li>
+          
+     </li>
 
       <br>
       <br>
       <br>
       <br>
-
+<!-- <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-64.30785896256567%2C-33.11305715977474%2C-64.2968082614243%2C-33.10751236901627&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=17/-33.11028/-64.30233">Ver mapa más grande</a></small>
+ -->
     <!-- <li>
         <h4> <a href="#" onclick="toggleCourse('all'); return false;">Todos</a></h4>
       <div id="all" class="description">

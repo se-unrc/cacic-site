@@ -45,7 +45,7 @@ en:
   information: Information
   international_school: international School of Computing
   international_school_desc: The following teachers will be in the congress school
-  cacic_history: The XXV Argentinean Conference of Computer Science is going to 
+  cacic_history: The XXV Argentinian Conference of Computer Science is going to 
     take place for first time in Cordoba Province, during the second week of
     October, at headquarters of Facultad de Ciencias Exactas, Físico-Químicas y
     Naturales of Universidad Nacional de Río Cuarto, Río Cuarto, Córdoba,
@@ -53,7 +53,7 @@ en:
     federal reaching. It acts as a meeting point for researches, teaches,
     grade/postgrade students and IT practicioners.
   conference: Conference
-  congress_title: Argentinean Congress of Computer Science
+  congress_title: Argentinian Congress of Computer Science
   organize: Organize
   paper_format: Paper Format
   platinium: Platinium
@@ -194,5 +194,8 @@ en:
   dinner_info1: before Saturday 10/12/2019.
 
   form: Form
+  authors: Autores
+  venue: Venue
+  break_duration: At 6 pm (Tuesday, Wednesday, and Thursday), there will be a 20-minute break in all Workshops
 
 

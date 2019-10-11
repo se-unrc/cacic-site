@@ -189,6 +189,7 @@ es:
   talk1: Charla 1
   talk2: Charla 2
   talk3: Charla 3
+
   talk4: Charla 4
   talk5: Charla 5
   acco_info: CACIC 2019 no se encarga de las reservas de alojamiento a hoteles. Para acceder a los precio que se mencionan a continuacion, en todos los casos debe mencionar que asisten a CACIC. Debido a la limitada capacidad hotelera de la ciudad, se sugiere realizar las reservas con anticipación.
@@ -206,3 +207,6 @@ es:
     La cena tiene un costo de $ 700, que debe pagarse en efectivo cuando se acredita en el Congreso.
     Para participar en la Cena de Camaradería, debe completar el
   dinner_info1: antes del sábado 12/10/2019.
+  authors: Autores
+  venue: Lugar
+  break_duration: A las 18hs (Martes, Miercoles, y Jueves), habra break de 20 minutos en todos los Workshops
