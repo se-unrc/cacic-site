@@ -18,11 +18,13 @@ Rails.application.routes.draw do
     get 'static_pages/accepted_paper'
     get 'static_pages/download_accepted_paper'
     get 'static_pages/schedule'
+   
 
   #   # workshops download
     get 'download_schedule/:id', to: 'static_pages#download_schedule', as: 'download_schedule'
 
-    get 'static_pages/download_schedule_wis'
+
+    get 'static_pages/download_slides_course4'
     get 'static_pages/workshops'
     get 'static_pages/inscription'
     get 'static_pages/school'
@@ -36,7 +38,7 @@ Rails.application.routes.draw do
     get 'static_pages/maps'
 
 
-
+    get 'static_pages/download_slides_course4'
 
     get 'workshops/:slug', to: 'workshops#show'
 

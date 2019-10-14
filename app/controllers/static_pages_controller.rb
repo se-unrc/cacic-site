@@ -72,6 +72,14 @@ class StaticPagesController < ApplicationController
       disposition: "inline; filename=#{filename}")
   end
 
+
+  def download_slides_course4
+    send_file(
+      "#{Rails.root}/app/assets/images/materials/course4/cursoLogicaParaCpmpClase1.pdf",
+      filename: "cursoLogicaParaCpmpClase1.pdf",
+      type: "application/pdf")
+  end
+
   # def download_schedule_wpdp
   #   send_file(
   #     "#{Rails.root}/app/assets/images/cronogramaWPDP.pdf",
