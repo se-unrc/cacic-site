@@ -106,9 +106,9 @@ class StaticPagesController < ApplicationController
 
     def download_lista_course4
     send_file(
-      "#{Rails.root}/app/assets/images/materials/course4/listas.als",
-      filename: "listas.als",
-      disposition: "inline; filename=listas.als")
+      "#{Rails.root}/app/assets/images/materials/course4/Listas.als",
+      filename: "Listas.als",
+      disposition: "inline; filename=Listas.als")
   end
   # def download_schedule_wpdp
   #   send_file(
