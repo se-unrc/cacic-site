@@ -24,7 +24,12 @@ Rails.application.routes.draw do
     get 'download_schedule/:id', to: 'static_pages#download_schedule', as: 'download_schedule'
 
 
-    get 'static_pages/download_slides_course4'
+    get 'static_pages/download_slides1_course4'
+    get 'static_pages/download_slides2_course4'
+    get 'static_pages/download_requals_course4'
+    get 'static_pages/download_requals_buggy_course4'
+    get 'static_pages/download_lista_course4'
+
     get 'static_pages/workshops'
     get 'static_pages/inscription'
     get 'static_pages/school'

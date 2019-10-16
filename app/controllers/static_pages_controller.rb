@@ -73,7 +73,7 @@ class StaticPagesController < ApplicationController
   end
 
 
-  def download_slides_course4
+  def download_slides1_course4
     send_file(
       "#{Rails.root}/app/assets/images/materials/course4/cursoLogicaParaCpmpClase1.pdf",
       filename: "cursoLogicaParaCpmpClase1.pdf",
@@ -81,6 +81,35 @@ class StaticPagesController < ApplicationController
       disposition: "inline; filename=cursoLogicaParaCpmpClase1.pdf")
   end
 
+  def download_slides2_course4
+    send_file(
+      "#{Rails.root}/app/assets/images/materials/course4/cursoLogicaParaCpmpClase2.pdf",
+      filename: "cursoLogicaParaCpmpClas2.pdf",
+      type: "application/pdf",
+      disposition: "inline; filename=cursoLogicaParaCpmpClase2.pdf")
+  end
+
+  def download_requals_buggy_course4
+    send_file(
+      "#{Rails.root}/app/assets/images/materials/course4/rEqualsItsClosureBuggy.als",
+      filename: "rEqualsItsClosureBuggy.als",
+      disposition: "inline; filename=rEqualsItsClosureBuggy.als")
+  end
+
+  def download_requals_course4
+    send_file(
+      "#{Rails.root}/app/assets/images/materials/course4/rEqualsItsClosure.als",
+      filename: "rEqualsItsClosure.als",
+     
+      disposition: "inline; filename=rEqualsItsClosure.als")
+  end
+
+    def download_lista_course4
+    send_file(
+      "#{Rails.root}/app/assets/images/materials/course4/listas.als",
+      filename: "listas.als",
+      disposition: "inline; filename=listas.als")
+  end
   # def download_schedule_wpdp
   #   send_file(
   #     "#{Rails.root}/app/assets/images/cronogramaWPDP.pdf",
