@@ -26,9 +26,15 @@ Rails.application.routes.draw do
 
     get 'static_pages/download_slides1_course4'
     get 'static_pages/download_slides2_course4'
+    get 'static_pages/download_slides3_course4'
     get 'static_pages/download_requals_course4'
     get 'static_pages/download_requals_buggy_course4'
     get 'static_pages/download_lista_course4'
+    get 'static_pages/download_bin_tree_course4'
+    get 'static_pages/download_arbol_binario_course4'
+    get 'static_pages/download_bin_tree_test_course4'
+    get 'static_pages/download_node_course4'
+
 
     get 'static_pages/workshops'
     get 'static_pages/inscription'

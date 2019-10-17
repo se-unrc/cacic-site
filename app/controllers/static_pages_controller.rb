@@ -110,6 +110,42 @@ class StaticPagesController < ApplicationController
       filename: "Listas.als",
       disposition: "inline; filename=Listas.als")
   end
+
+
+    def download_arbol_binario_course4
+    send_file(
+      "#{Rails.root}/app/assets/images/materials/course4/arbolBinario.als",
+      filename: "arbolBinario.als",
+      disposition: "inline; filename=arbolBinario.als")
+  end
+
+      def download_bin_tree_course4
+    send_file(
+      "#{Rails.root}/app/assets/images/materials/course4/BinTree.java",
+      filename: "BinTree.java",
+      disposition: "inline; filename=BinTree.java")
+  end
+
+      def download_bin_tree_test_course4
+    send_file(
+      "#{Rails.root}/app/assets/images/materials/course4/BinTreeTest.java",
+      filename: "BinTreeTest.java",
+      disposition: "inline; filename=BinTreeTest.java")
+  end
+
+      def download_slides3_course4
+    send_file(
+      "#{Rails.root}/app/assets/images/materials/course4/cursoLogicaParaCpmpClase3.pdf",
+      filename: "cursoLogicaParaCpmpClase3.pdf",
+      disposition: "inline; filename=cursoLogicaParaCpmpClase3.pdf")
+  end
+
+      def download_node_course4
+    send_file(
+      "#{Rails.root}/app/assets/images/materials/course4/Node.java",
+      filename: "Node.java",
+      disposition: "inline; filename=Node.java")
+  end
   # def download_schedule_wpdp
   #   send_file(
   #     "#{Rails.root}/app/assets/images/cronogramaWPDP.pdf",
