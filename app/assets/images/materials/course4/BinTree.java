@@ -1,28 +1,28 @@
-package ar.edu.unrc.cacic2019;
+package roops.core.objects;
 
 public class BinTree {
 
   /*@
-    @ invariant (\forall Node n;
-    @     \reach(root, Node, left + right).has(n) == true;
-    @     \reach(n.right, Node, right + left).has(n) == false &&
-    @     \reach(n.left, Node, left + right).has(n) == false);
+    @ invariant (\forall BinTreeNode n;
+    @     \reach(root, BinTreeNode, left + right).has(n) == true;
+    @     \reach(n.right, BinTreeNode, right + left).has(n) == false &&
+    @     \reach(n.left, BinTreeNode, left + right).has(n) == false);
     @
-    @ invariant (\forall Node n;
-    @     \reach(root, Node, left + right).has(n) == true;
-    @     (\forall Node m; \reach(n.left, Node, left + right).has(m) == true; m.key <= n.key) &&
-    @     (\forall Node m; \reach(n.right, Node, left + right).has(m) == true; m.key > n.key));
+    @ invariant (\forall BinTreeNode n;
+    @     \reach(root, BinTreeNode, left + right).has(n) == true;
+    @     (\forall BinTreeNode m; \reach(n.left, BinTreeNode, left + right).has(m) == true; m.key <= n.key) &&
+    @     (\forall BinTreeNode m; \reach(n.right, BinTreeNode, left + right).has(m) == true; m.key > n.key));
     @
-    @ invariant size == \reach(root, Node, left + right).int_size();
+    @ invariant size == \reach(root, BinTreeNode, left + right).int_size();
     @
-    @ invariant (\forall Node n;
-    @	  \reach(root, Node, left + right).has(n) == true;
+    @ invariant (\forall BinTreeNode n;
+    @	  \reach(root, BinTreeNode, left + right).has(n) == true;
     @	  (n.left != null ==> n.left.parent == n) && (n.right != null ==> n.right.parent == n));
     @
     @ invariant root != null ==> root.parent == null;
     @*/
 
-	public /*@nullable@*/ Node root;
+	public /*@nullable@*/ BinTreeNode root;
 
 	public int size;
 
@@ -32,23 +32,23 @@ public class BinTree {
 	/*@
     @ requires true;
     @
-    @ ensures (\result == true) <==> (\exists Node n;
-    @		\reach(root, Node, left+right).has(n) == true;
+    @ ensures (\result == true) <==> (\exists BinTreeNode n;
+    @		\reach(root, BinTreeNode, left+right).has(n) == true;
     @		n.key == k);
     @
-    @ ensures (\forall Node n;
-    @		\reach(root, Node, left+right).has(n);
-    @		\old(\reach(root, Node, left+right)).has(n));
+    @ ensures (\forall BinTreeNode n;
+    @		\reach(root, BinTreeNode, left+right).has(n);
+    @		\old(\reach(root, BinTreeNode, left+right)).has(n));
     @
-    @ ensures (\forall Node n;
-    @		\old(\reach(root, Node, left+right)).has(n);
-    @		\reach(root, Node, left+right).has(n));
+    @ ensures (\forall BinTreeNode n;
+    @		\old(\reach(root, BinTreeNode, left+right)).has(n);
+    @		\reach(root, BinTreeNode, left+right).has(n));
     @
     @ signals (RuntimeException e) false;
     @*/
 	public boolean contains( int k ) {
-		Node current = root; 
-		//@decreasing \reach(current, Node, left+right).int_size();
+		BinTreeNode current = root; 
+		//@decreasing \reach(current, BinTreeNode, left+right).int_size();
 		while (current != null) { 
 			if (current.key > k) { 
 				current = current.left;
@@ -62,4 +62,61 @@ public class BinTree {
 		}
 		return true;
 	}
+	
+	
+	
+	/*@ requires true;
+	  @ ensures (\exists BinTreeNode n; \reach(root, BinTreeNode, left+right).has(n); n.key == k);
+	  @ signals (Exception e) false;
+	  @*/
+	
+	public boolean insert(int k){
+		BinTreeNode current = root; 
+		//@decreasing \reach(current, BinTreeNode, left+right).int_size();
+		while (current != null) { 
+			if (current.key > k) { 
+				if (current.left == null){
+					BinTreeNode newNode = new BinTreeNode();
+					newNode.parent = current;
+					current.left = newNode;
+					newNode.key = k;
+					size++;
+					return true;
+				}
+				current = current.left;
+			} else {
+				if (k > current.key) {
+					if (current.right == null){
+						BinTreeNode newNode = new BinTreeNode();
+						newNode.parent = current;
+						current.right = newNode;
+						newNode.key = k;
+						size++;
+						return true;
+					}
+					current = current.right;
+				} else {
+					return false;
+				}
+			}
+		}
+		BinTreeNode newNode = new BinTreeNode();
+		root = newNode;
+		newNode.key = k;
+		size++;
+		return true;
+	}
+	
+	
+	
+//	public static void main(String[] args) {
+//		BinTree b = new BinTree();
+//		b.root = null;
+//		b.size = 0;
+//		b.insert(-6);
+//	}
+	
+	
+	
+	
 }

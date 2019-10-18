@@ -89,6 +89,15 @@ class StaticPagesController < ApplicationController
       disposition: "inline; filename=cursoLogicaParaCpmpClase2.pdf")
   end
 
+    def download_slides4_course4
+    send_file(
+      "#{Rails.root}/app/assets/images/materials/course4/cursoLogicaParaCpmpClase4.pdf",
+      filename: "cursoLogicaParaCpmpClas4.pdf",
+      type: "application/pdf",
+      disposition: "inline; filename=cursoLogicaParaCpmpClase4.pdf")
+  end
+
+
   def download_requals_buggy_course4
     send_file(
       "#{Rails.root}/app/assets/images/materials/course4/rEqualsItsClosureBuggy.als",
@@ -140,7 +149,15 @@ class StaticPagesController < ApplicationController
       disposition: "inline; filename=cursoLogicaParaCpmpClase3.pdf")
   end
 
-      def download_node_course4
+      def download_tutorial_course4
+    send_file(
+      "#{Rails.root}/app/assets/images/materials/course4/TutorialRelMiCS2009CACIC.pdf",
+      filename: "TutorialRelMiCS2009CACIC.pdf",
+      disposition: "inline; filename=TutorialRelMiCS2009CACIC.pdf")
+  end
+
+
+  def download_node_course4
     send_file(
       "#{Rails.root}/app/assets/images/materials/course4/Node.java",
       filename: "Node.java",
