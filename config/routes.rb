@@ -37,6 +37,8 @@ Rails.application.routes.draw do
     get 'static_pages/download_node_course4'
     get 'static_pages/download_tutorial_course4'
 
+    get 'static_pages/download_result_course3'
+
 
 
     get 'static_pages/workshops'
