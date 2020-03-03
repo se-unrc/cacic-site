@@ -17,6 +17,7 @@ en:
   contact_description: Contact us
   guest_talks: Guest Talk
   plenary_activities: Plenary Activities
+  proceedings: Proceedings
 
   course: Course %{number}
   course_charge: On charge of
